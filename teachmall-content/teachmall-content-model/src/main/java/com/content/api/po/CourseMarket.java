@@ -1,4 +1,4 @@
-package com.content.model.po;
+package com.content.api.po;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;

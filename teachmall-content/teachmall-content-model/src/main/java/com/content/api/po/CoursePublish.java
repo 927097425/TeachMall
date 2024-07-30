@@ -1,4 +1,4 @@
-package com.content.model.po;
+package com.content.api.po;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;
