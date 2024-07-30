@@ -7,7 +7,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>teachmall-base</name>
     <description>teachmall-base</description>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
 
 
