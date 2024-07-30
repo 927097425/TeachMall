@@ -6,13 +6,7 @@ import lombok.Data;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-/**
- * <p>
- * 
- * </p>
- *
- * @author itcast
- */
+
 @Data
 @TableName("teachplan_media")
 public class TeachplanMedia implements Serializable {
