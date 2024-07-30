@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 63040
   servlet:
     context-path: /content
 
@@ -17,3 +17,4 @@ spring:
 # 日志文件配置路径
 logging:
   config: classpath:log4j2-dev.xml
+
