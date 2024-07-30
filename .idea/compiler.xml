@@ -8,7 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
       </profile>
-      <profile name="Annotation profile for teachmall-generator" enabled="true">
+      <profile name="Annotation profile for teachmall-content" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -23,6 +23,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
+      <module name="demo" target="1.8" />
       <module name="teachmall-content-model (1)" target="1.8" />
       <module name="teachmall-content-model (2)" target="1.8" />
       <module name="xuecheng-plus-content" target="1.8" />

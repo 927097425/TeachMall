@@ -12,7 +12,13 @@
         <option value="$PROJECT_DIR$/teachmall-content/pom.xml" />
         <option value="$PROJECT_DIR$/xuecheng-plus-generator/pom.xml" />
         <option value="$PROJECT_DIR$/teachmall-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="17" project-jdk-type="JavaSDK">
