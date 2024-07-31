@@ -14,6 +14,12 @@ spring:
     url: jdbc:mysql://${teachmall.db.host}/teachmall_content?serverTimezone=UTC&userUnicode=true&useSSL=false&
     username: root
     password: ${teachmall.db.pw}
+swagger:
+  title: "教育商城内容管理系统"
+  description: "内容系统管理系统对课程相关信息进行管理"
+  base-package: com.teachmall.content
+  enabled: true
+  version: 1.0.0
 # 日志文件配置路径
 logging:
   config: classpath:log4j2-dev.xml
