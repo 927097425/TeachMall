@@ -1,5 +1,5 @@
 server:
-  port: 63040
+  port: 8081
   servlet:
     context-path: /content
 
@@ -14,12 +14,22 @@ spring:
     url: jdbc:mysql://${teachmall.db.host}/teachmall_content?serverTimezone=UTC&userUnicode=true&useSSL=false&
     username: root
     password: ${teachmall.db.pw}
-swagger:
-  title: "教育商城内容管理系统"
-  description: "内容系统管理系统对课程相关信息进行管理"
-  base-package: com.teachmall.content
-  enabled: true
-  version: 1.0.0
+knife4j:
+  enable: true
+  openapi:
+    title: 黑马商城用户接口文档
+    description: "黑马商城用户接口文档"
+    email: zhanghuyi@itcast.cn
+    concat: 虎哥
+    url: https://www.itcast.cn
+    version: v1.0.0
+    group:
+      default:
+        group-name: default
+        api-rule: package
+        api-rule-resources:
+          - com.teachmall.content.api
+
 # 日志文件配置路径
 logging:
   config: classpath:log4j2-dev.xml

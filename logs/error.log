@@ -1,364 +1,4 @@
-2024-07-31 16:24:02,695 ERROR [main][SpringApplication.java:835] - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:220)
-	at java.base/java.util.Arrays.sort(Arrays.java:1233)
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:852)
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
-	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1340)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:270)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:234)
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 14 more
-2024-07-31 16:24:26,998 ERROR [main][SpringApplication.java:835] - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:220)
-	at java.base/java.util.Arrays.sort(Arrays.java:1233)
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:852)
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
-	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1340)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:270)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:234)
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 14 more
-2024-07-31 16:25:53,735 ERROR [main][SpringApplication.java:835] - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:220)
-	at java.base/java.util.Arrays.sort(Arrays.java:1233)
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:852)
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
-	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1340)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:270)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:234)
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 14 more
-2024-07-31 16:34:01,416 ERROR [main][SpringApplication.java:835] - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:220)
-	at java.base/java.util.Arrays.sort(Arrays.java:1233)
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:852)
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
-	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1340)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:270)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:234)
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 14 more
-2024-07-31 16:38:36,279 ERROR [main][SpringApplication.java:835] - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:220)
-	at java.base/java.util.Arrays.sort(Arrays.java:1233)
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:852)
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
-	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1340)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:270)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:234)
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 14 more
-2024-07-31 16:39:40,176 ERROR [main][SpringApplication.java:835] - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:220)
-	at java.base/java.util.Arrays.sort(Arrays.java:1233)
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:852)
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
-	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1340)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:270)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:234)
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 14 more
-2024-07-31 16:40:39,961 ERROR [main][SpringApplication.java:835] - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:220)
-	at java.base/java.util.Arrays.sort(Arrays.java:1233)
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:852)
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
-	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1340)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:270)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:234)
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 14 more
-2024-07-31 16:41:11,858 ERROR [main][SpringApplication.java:835] - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:220)
-	at java.base/java.util.Arrays.sort(Arrays.java:1233)
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:852)
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
-	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1340)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:270)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:234)
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 14 more
-2024-07-31 16:43:37,557 ERROR [main][SpringApplication.java:835] - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:13)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:220)
-	at java.base/java.util.Arrays.sort(Arrays.java:1233)
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:852)
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
-	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1340)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:270)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:234)
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 14 more
-2024-07-31 16:44:56,190 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+2024-07-31 17:26:07,245 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
 
 ***************************
 APPLICATION FAILED TO START
@@ -366,58 +6,135 @@ APPLICATION FAILED TO START
 
 Description:
 
-Your project setup is incompatible with our requirements due to following reasons:
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
 
-- Spring Boot [2.3.7.RELEASE] is not compatible with this Spring Cloud release train
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
 
 
 Action:
 
-Consider applying the following actions:
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
 
-- Change Spring Boot version to one of the following versions [2.6.x, 2.7.x] .
-You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
-If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
-If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]
+2024-07-31 17:28:11,725 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
 
 
-2024-07-31 16:45:51,153 ERROR [main][SpringApplication.java:835] - Application run failed
-org.springframework.context.ApplicationContextException: Failed to start bean 'documentationPluginsBootstrapper'; nested exception is java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:181)
-	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:54)
-	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:356)
-	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
-	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:155)
-	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:123)
-	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:935)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:586)
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:745)
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:420)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:13)
-Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
-	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
-	at com.google.common.collect.ComparatorOrdering.compare(ComparatorOrdering.java:37)
-	at java.base/java.util.TimSort.countRunAndMakeAscending(TimSort.java:355)
-	at java.base/java.util.TimSort.sort(TimSort.java:220)
-	at java.base/java.util.Arrays.sort(Arrays.java:1233)
-	at com.google.common.collect.Ordering.sortedCopy(Ordering.java:852)
-	at springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider.requestHandlers(WebMvcRequestHandlerProvider.java:57)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:138)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper$2.apply(DocumentationPluginsBootstrapper.java:135)
-	at com.google.common.collect.Iterators$6.transform(Iterators.java:788)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.TransformedIterator.next(TransformedIterator.java:47)
-	at com.google.common.collect.Iterators$ConcatenatedIterator.hasNext(Iterators.java:1340)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:270)
-	at com.google.common.collect.ImmutableList.copyOf(ImmutableList.java:234)
-	at com.google.common.collect.FluentIterable.toList(FluentIterable.java:617)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.defaultContextBuilder(DocumentationPluginsBootstrapper.java:111)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.buildContext(DocumentationPluginsBootstrapper.java:96)
-	at springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start(DocumentationPluginsBootstrapper.java:167)
-	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:178)
-	... 14 more
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:34:53,443 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:37:53,817 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:41:17,129 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:41:45,528 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:43:43,361 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'typeResolver', defined in class path resource [com/teachmall/content/config/SwaggerConfig.class], could not be registered. A bean with that name has already been defined in class path resource [springfox/documentation/schema/configuration/ModelsConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2024-07-31 17:46:07,318 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+

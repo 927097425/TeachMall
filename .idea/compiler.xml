@@ -8,12 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
       </profile>
-      <profile name="Annotation profile for teachmall-generator" enabled="true">
+      <profile name="Annotation profile for teachmall-content" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$PROJECT_DIR$/../../apache-maven-3.6.1-bin/apache-maven-3.6.1/mvn-repo/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar" />
+          <entry name="$PROJECT_DIR$/../../apache-maven-3.6.1-bin/apache-maven-3.6.1/mvn-repo/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
         </processorPath>
         <module name="teachmall-content-model" />
         <module name="teachmall-content-api" />
@@ -30,5 +30,16 @@
       <module name="xuecheng-plus-content-model" target="1.5" />
       <module name="xuecheng-plus-parent" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="teachmall-base" options="-parameters" />
+      <module name="teachmall-content" options="-parameters" />
+      <module name="teachmall-content-api" options="-parameters" />
+      <module name="teachmall-content-model" options="-parameters" />
+      <module name="teachmall-content-service" options="-parameters" />
+      <module name="teachmall-generator" options="-parameters" />
+      <module name="teachmall-parent" options="-parameters" />
+    </option>
   </component>
 </project>
