@@ -5746,8 +5746,8 @@ Unconditional classes:
 2024-07-31 09:21:17,223 INFO [http-nio-63040-exec-1][FrameworkServlet.java:547] - Completed initialization in 2 ms
 2024-07-31 09:21:17,231 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:119] - GET "/content/course/list", parameters={}
 2024-07-31 09:21:17,231 DEBUG [http-nio-63040-exec-1][LogFormatUtils.java:119] - GET "/content/course/list", parameters={}
-2024-07-31 09:21:17,239 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:522] - Mapped to api.com.teachmall.content.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
-2024-07-31 09:21:17,239 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:522] - Mapped to api.com.teachmall.content.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
+2024-07-31 09:21:17,239 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:522] - Mapped to api.com.teachmall.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
+2024-07-31 09:21:17,239 DEBUG [http-nio-63040-exec-1][AbstractHandlerMapping.java:522] - Mapped to api.com.teachmall.content.api.CourseBaseInfoController#list(PageParams, QueryCourseParamsDto)
 2024-07-31 09:21:17,447 DEBUG [http-nio-63040-exec-1][AbstractMessageConverterMethodProcessor.java:268] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
 2024-07-31 09:21:17,447 DEBUG [http-nio-63040-exec-1][AbstractMessageConverterMethodProcessor.java:268] - Using 'application/json;q=0.8', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.7, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
 2024-07-31 09:21:17,448 DEBUG [http-nio-63040-exec-1][AbstractMessageConverterMethodProcessor.java:298] - Nothing to write: null body

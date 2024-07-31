@@ -1,4 +1,4 @@
-package com.teachmall.content.api;
+package com.teachmall.content;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

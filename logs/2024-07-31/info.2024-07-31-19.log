@@ -1,0 +1,20 @@
+2024-07-31 19:41:39,036 DEBUG [SpringApplicationShutdownHook][ApplicationAvailabilityBean.java:77] - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-07-31 19:41:39,036 DEBUG [SpringApplicationShutdownHook][ApplicationAvailabilityBean.java:77] - Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+2024-07-31 19:41:39,044 DEBUG [SpringApplicationShutdownHook][AbstractApplicationContext.java:1051] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20095ab4, started on Wed Jul 31 18:25:46 HKT 2024, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@12f3afb5
+2024-07-31 19:41:39,044 DEBUG [SpringApplicationShutdownHook][AbstractApplicationContext.java:1051] - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@20095ab4, started on Wed Jul 31 18:25:46 HKT 2024, parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@12f3afb5
+2024-07-31 19:41:39,046 DEBUG [SpringApplicationShutdownHook][DefaultLifecycleProcessor.java:365] - Stopping beans in phase 2147483647
+2024-07-31 19:41:39,046 DEBUG [SpringApplicationShutdownHook][DefaultLifecycleProcessor.java:365] - Stopping beans in phase 2147483647
+2024-07-31 19:41:39,046 DEBUG [SpringApplicationShutdownHook][DefaultLifecycleProcessor.java:238] - Bean 'documentationPluginsBootstrapper' completed its stop procedure
+2024-07-31 19:41:39,046 DEBUG [SpringApplicationShutdownHook][DefaultLifecycleProcessor.java:238] - Bean 'documentationPluginsBootstrapper' completed its stop procedure
+2024-07-31 19:41:39,047 DEBUG [SpringApplicationShutdownHook][DefaultLifecycleProcessor.java:238] - Bean 'webServerGracefulShutdown' completed its stop procedure
+2024-07-31 19:41:39,047 DEBUG [SpringApplicationShutdownHook][DefaultLifecycleProcessor.java:238] - Bean 'webServerGracefulShutdown' completed its stop procedure
+2024-07-31 19:41:39,047 DEBUG [SpringApplicationShutdownHook][DefaultLifecycleProcessor.java:365] - Stopping beans in phase 2147483646
+2024-07-31 19:41:39,047 DEBUG [SpringApplicationShutdownHook][DefaultLifecycleProcessor.java:365] - Stopping beans in phase 2147483646
+2024-07-31 19:41:39,065 DEBUG [SpringApplicationShutdownHook][DefaultLifecycleProcessor.java:238] - Bean 'webServerStartStop' completed its stop procedure
+2024-07-31 19:41:39,065 DEBUG [SpringApplicationShutdownHook][DefaultLifecycleProcessor.java:238] - Bean 'webServerStartStop' completed its stop procedure
+2024-07-31 19:41:39,066 DEBUG [SpringApplicationShutdownHook][MBeanExporter.java:452] - Unregistering JMX-exposed beans on shutdown
+2024-07-31 19:41:39,066 DEBUG [SpringApplicationShutdownHook][MBeanExporter.java:452] - Unregistering JMX-exposed beans on shutdown
+2024-07-31 19:41:39,066 DEBUG [SpringApplicationShutdownHook][MBeanRegistrationSupport.java:186] - Unregistering JMX-exposed beans
+2024-07-31 19:41:39,066 DEBUG [SpringApplicationShutdownHook][MBeanRegistrationSupport.java:186] - Unregistering JMX-exposed beans
+2024-07-31 19:41:39,066 DEBUG [SpringApplicationShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2024-07-31 19:41:39,066 DEBUG [SpringApplicationShutdownHook][ExecutorConfigurationSupport.java:218] - Shutting down ExecutorService 'applicationTaskExecutor'

@@ -1,4 +1,4 @@
-package com.teachmall.content.api.po;
+package com.teachmall.content.po;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.Data;

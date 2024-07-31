@@ -1,4 +1,4 @@
-package com.teachmall.content.api.dto;
+package com.teachmall.content.dto;
 
 
 import lombok.AllArgsConstructor;
