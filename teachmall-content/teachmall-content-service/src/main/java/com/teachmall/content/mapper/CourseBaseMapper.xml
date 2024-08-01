@@ -17,6 +17,7 @@
             </if>
             <if test="queryCourseParams.courseName != null">
                 and name like concat('%', #{queryCourseParams.courseName}, '%')
+
             </if>
         </where>
         limit #{pageParams.pageNo} offset #{pageParams.pageSize}
