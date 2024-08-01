@@ -3,7 +3,7 @@
 <mapper namespace="com.teachmall.content.mapper.CoursePublishMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.teachmall.generator.model.po.CoursePublish">
+    <resultMap id="BaseResultMap" type="com.teachmall.content.model.po.CoursePublish">
         <id column="id" property="id" />
         <result column="company_id" property="companyId" />
         <result column="company_name" property="companyName" />

@@ -2,7 +2,7 @@ package com.teachmall.content.mapper;
 
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.teachmall.content.po.TeachplanMedia;
+import com.teachmall.content.model.po.TeachplanMedia;
 
 /**
  * <p>

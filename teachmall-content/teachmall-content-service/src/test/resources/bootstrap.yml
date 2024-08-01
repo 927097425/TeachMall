@@ -1,0 +1,12 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${teachmall.db.host}/teachmall_content?serverTimezone=UTC&userUnicode=true&useSSL=false&
+    username: root
+    password: ${teachmall.db.pw}
+
+# 日志文件配置路径
+logging:
+  config: classpath:log4j2-dev.xml

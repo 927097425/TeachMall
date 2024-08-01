@@ -1,4 +1,4 @@
-package com.teachmall.content.po;
+package com.teachmall.content.model.po;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;

@@ -1,7 +1,7 @@
 package com.teachmall.content.api;
 
-import com.teachmall.content.dto.QueryCourseParamsDto;
-import com.teachmall.content.po.CourseBase;
+import com.teachmall.content.model.dto.QueryCourseParamsDto;
+import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.base.model.PageParams;
 import com.teachmall.base.model.PageResult;
 import io.swagger.annotations.Api;
