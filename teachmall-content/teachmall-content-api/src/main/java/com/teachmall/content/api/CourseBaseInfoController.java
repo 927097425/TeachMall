@@ -4,9 +4,11 @@ import com.teachmall.content.model.dto.QueryCourseParamsDto;
 import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.base.model.PageParams;
 import com.teachmall.base.model.PageResult;
+import com.teachmall.content.service.CourseBaseInfoService;
 import io.swagger.annotations.Api;
 
 import io.swagger.annotations.ApiOperation;
+import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,17 +19,14 @@ import java.util.List;
 
 @Api(tags = "课程相关接口")
 @RestController
+@AllArgsConstructor
 public class CourseBaseInfoController {
+    private final CourseBaseInfoService courseBaseInfoService;
     @ApiOperation("查询课程列表")
     @PostMapping("/course/list")
     public PageResult<CourseBase> list(PageParams pageParams, @RequestBody(required = false) QueryCourseParamsDto queryCourseParamsDto){
-        CourseBase courseBase = new CourseBase();
-        courseBase.setName("测试名称");
-        courseBase.setCreateDate(LocalDateTime.now());
-        List<CourseBase> courseBases = new ArrayList();
-        courseBases.add(courseBase);
-        PageResult pageResult = new PageResult<CourseBase>(courseBases,10,1,10);
-        return pageResult;
+        PageResult<CourseBase> courseBasePageResult = courseBaseInfoService.queryCourseBaseList(pageParams,queryCourseParamsDto);
+        return courseBasePageResult;
     }
 
 }

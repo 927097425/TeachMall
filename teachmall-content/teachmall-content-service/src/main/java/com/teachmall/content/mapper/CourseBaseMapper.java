@@ -21,6 +21,6 @@ import java.util.List;
  */
 
 public interface CourseBaseMapper extends BaseMapper<CourseBase> {
-    List<CourseBase> selectCourseBaseByPage(@Param("pageParams") PageParams pageParams,@Param("queryCourseParams") QueryCourseParamsDto queryCourseParamsDto);
+
 
 }

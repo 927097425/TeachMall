@@ -8,18 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
       </profile>
-      <profile name="Annotation profile for teachmall-content" enabled="true">
+      <profile name="Annotation profile for xuecheng-plus-system" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$PROJECT_DIR$/../../apache-maven-3.6.1-bin/apache-maven-3.6.1/mvn-repo/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
         </processorPath>
+        <module name="teachmall-system-model" />
         <module name="teachmall-content-model" />
         <module name="teachmall-content-api" />
         <module name="teachmall-base" />
-        <module name="teachmall-generator" />
         <module name="teachmall-content-service" />
+        <module name="teachmall-system-api" />
+        <module name="teachmall-system-service" />
+        <module name="teachmall-generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
@@ -40,6 +43,10 @@
       <module name="teachmall-content-service" options="-parameters" />
       <module name="teachmall-generator" options="-parameters" />
       <module name="teachmall-parent" options="-parameters" />
+      <module name="teachmall-system" options="-parameters" />
+      <module name="teachmall-system-api" options="-parameters" />
+      <module name="teachmall-system-model" options="" />
+      <module name="teachmall-system-service" options="-parameters" />
     </option>
   </component>
 </project>

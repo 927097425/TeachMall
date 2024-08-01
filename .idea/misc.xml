@@ -13,6 +13,9 @@
         <option value="$PROJECT_DIR$/xuecheng-plus-generator/pom.xml" />
         <option value="$PROJECT_DIR$/teachmall-generator/pom.xml" />
         <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-system/xuecheng-plus-system-service/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-system/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-system/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

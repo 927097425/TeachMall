@@ -8,6 +8,7 @@ import com.teachmall.base.model.PageResult;
 import com.teachmall.content.mapper.CourseBaseMapper;
 import com.teachmall.content.model.dto.QueryCourseParamsDto;
 import com.teachmall.content.model.po.CourseBase;
+import com.teachmall.content.service.CourseBaseInfoService;
 import org.apache.commons.lang.StringUtils;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -54,7 +55,7 @@ class CourseBaseMapperTests {
         Page<CourseBase> pageResult = courseBaseMapper.selectPage(page, queryWrapper);
 
         //数据
-        List<CourseBase> items = courseBaseMapper.selectCourseBaseByPage(pageParams,queryCourseParamsDto);
+        List<CourseBase> items = pageResult.getRecords();
         //总记录数
         long total = pageResult.getTotal();
 
@@ -62,5 +63,26 @@ class CourseBaseMapperTests {
         PageResult<CourseBase> courseBasePageResult = new PageResult<>(items, total, pageParams.getPageNo(), pageParams.getPageSize());
         System.out.println(courseBasePageResult);
     }
+    @Autowired
+    CourseBaseInfoService courseBaseInfoService;
+
+
+    @Test
+    void testCourseBaseInfoService() {
+        //查询条件
+        QueryCourseParamsDto queryCourseParamsDto = new QueryCourseParamsDto();
+        queryCourseParamsDto.setCourseName("java");
+        queryCourseParamsDto.setAuditStatus("202004");
+        queryCourseParamsDto.setPublishStatus("203001");
+
+        //分页参数
+        PageParams pageParams = new PageParams();
+        pageParams.setPageNo(1L);//页码
+        pageParams.setPageSize(3L);//每页记录数
+
+        PageResult<CourseBase> courseBasePageResult = courseBaseInfoService.queryCourseBaseList(pageParams, queryCourseParamsDto);
+        System.out.println(courseBasePageResult);
+    }
+
 
 }
