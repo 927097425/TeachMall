@@ -204,8 +204,8 @@ Unconditional classes:
 2024-07-31 09:19:17,092 DEBUG [main][PropertySourcesPropertyResolver.java:115] - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
 2024-07-31 09:19:18,331 INFO [main][SpringApplication.java:651] - The following 1 profile is active: "dev"
 2024-07-31 09:19:18,331 INFO [main][SpringApplication.java:651] - The following 1 profile is active: "dev"
-2024-07-31 09:19:18,332 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.content.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
-2024-07-31 09:19:18,332 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.content.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
+2024-07-31 09:19:18,332 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
+2024-07-31 09:19:18,332 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
 2024-07-31 09:19:18,344 DEBUG [main][AbstractApplicationContext.java:629] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63ec445c
 2024-07-31 09:19:18,344 DEBUG [main][AbstractApplicationContext.java:629] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63ec445c
 2024-07-31 09:19:18,350 DEBUG [main][DefaultSingletonBeanRegistry.java:225] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
@@ -3094,8 +3094,8 @@ Unconditional classes:
 2024-07-31 09:20:48,911 DEBUG [main][PropertySourcesPropertyResolver.java:115] - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
 2024-07-31 09:20:50,148 INFO [main][SpringApplication.java:651] - The following 1 profile is active: "dev"
 2024-07-31 09:20:50,148 INFO [main][SpringApplication.java:651] - The following 1 profile is active: "dev"
-2024-07-31 09:20:50,148 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.content.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
-2024-07-31 09:20:50,148 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.content.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
+2024-07-31 09:20:50,148 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
+2024-07-31 09:20:50,148 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
 2024-07-31 09:20:50,158 DEBUG [main][AbstractApplicationContext.java:629] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63ec445c
 2024-07-31 09:20:50,158 DEBUG [main][AbstractApplicationContext.java:629] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63ec445c
 2024-07-31 09:20:50,164 DEBUG [main][DefaultSingletonBeanRegistry.java:225] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'

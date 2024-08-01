@@ -18,8 +18,8 @@
 2024-07-31 00:01:15,867 DEBUG [main][StartupInfoLogger.java:56] - Running with Spring Boot v2.6.13, Spring v5.3.23
 2024-07-31 00:01:15,868 INFO [main][SpringApplication.java:651] - The following 1 profile is active: "dev"
 2024-07-31 00:01:15,868 INFO [main][SpringApplication.java:651] - The following 1 profile is active: "dev"
-2024-07-31 00:01:15,868 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.content.TeachmallContentApiApplication
-2024-07-31 00:01:15,868 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.content.TeachmallContentApiApplication
+2024-07-31 00:01:15,868 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.TeachmallContentApiApplication
+2024-07-31 00:01:15,868 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.TeachmallContentApiApplication
 2024-07-31 00:01:15,872 DEBUG [background-preinit][ResourceBundleMessageInterpolator.java:172] - Loaded expression factory via original TCCL
 2024-07-31 00:01:15,872 DEBUG [background-preinit][ResourceBundleMessageInterpolator.java:172] - Loaded expression factory via original TCCL
 2024-07-31 00:01:15,902 DEBUG [main][AbstractApplicationContext.java:629] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@70e659aa
@@ -2650,8 +2650,8 @@ Unconditional classes:
 2024-07-31 00:07:46,186 DEBUG [main][PropertySourcesPropertyResolver.java:115] - Found key 'spring.liveBeansView.mbeanDomain' in PropertySource 'systemProperties' with value of type String
 2024-07-31 00:07:47,413 INFO [main][SpringApplication.java:651] - The following 1 profile is active: "dev"
 2024-07-31 00:07:47,413 INFO [main][SpringApplication.java:651] - The following 1 profile is active: "dev"
-2024-07-31 00:07:47,413 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.content.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
-2024-07-31 00:07:47,413 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.content.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
+2024-07-31 00:07:47,413 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
+2024-07-31 00:07:47,413 DEBUG [main][SpringApplication.java:678] - Loading source class com.teachmall.TeachmallContentApiApplication,class org.springframework.cloud.bootstrap.BootstrapApplicationListener$BootstrapMarkerConfiguration
 2024-07-31 00:07:47,422 DEBUG [main][AbstractApplicationContext.java:629] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63ec445c
 2024-07-31 00:07:47,422 DEBUG [main][AbstractApplicationContext.java:629] - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@63ec445c
 2024-07-31 00:07:47,428 DEBUG [main][DefaultSingletonBeanRegistry.java:225] - Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'

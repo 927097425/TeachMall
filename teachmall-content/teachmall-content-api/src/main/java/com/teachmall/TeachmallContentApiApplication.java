@@ -1,4 +1,4 @@
-package com.teachmall.content;
+package com.teachmall;
 
 
 import org.springframework.boot.SpringApplication;

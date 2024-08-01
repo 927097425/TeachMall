@@ -14,7 +14,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -54,7 +54,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -94,7 +94,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -134,7 +134,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -174,7 +174,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -214,7 +214,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -254,7 +254,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -294,7 +294,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:12)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -334,7 +334,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:13)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:13)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)
@@ -397,7 +397,7 @@ org.springframework.context.ApplicationContextException: Failed to start bean 'd
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:13)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:13)
 Caused by: java.lang.NullPointerException: Cannot invoke "org.springframework.web.servlet.mvc.condition.PatternsRequestCondition.toString()" because the return value of "springfox.documentation.spi.service.contexts.Orderings.patternsCondition(springfox.documentation.RequestHandler)" is null
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:112)
 	at springfox.documentation.spi.service.contexts.Orderings$8.compare(Orderings.java:109)

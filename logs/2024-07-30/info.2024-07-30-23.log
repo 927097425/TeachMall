@@ -5162,7 +5162,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -5216,7 +5216,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -5270,7 +5270,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -5324,7 +5324,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -5544,7 +5544,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -5598,7 +5598,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -5652,7 +5652,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -5706,7 +5706,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -5926,7 +5926,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -5980,7 +5980,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -6034,7 +6034,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -6088,7 +6088,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -6308,7 +6308,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -6362,7 +6362,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -6416,7 +6416,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
@@ -6470,7 +6470,7 @@ org.springframework.beans.factory.BeanCreationException: Error creating bean wit
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:301)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1317)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
-	at com.teachmall.content.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
+	at com.teachmall.TeachmallContentApiApplication.main(TeachmallContentApiApplication.java:10)
 Caused by: java.lang.IllegalStateException: Failed to introspect Class [org.springframework.cloud.context.properties.ConfigurationPropertiesBeans] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@63947c6b]
 	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:485)
 	at org.springframework.util.ReflectionUtils.doWithLocalMethods(ReflectionUtils.java:321)
