@@ -54,7 +54,7 @@ class CourseBaseMapperTests {
         Page<CourseBase> pageResult = courseBaseMapper.selectPage(page, queryWrapper);
 
         //数据
-        List<CourseBase> items = pageResult.getRecords();
+        List<CourseBase> items = courseBaseMapper.selectCourseBaseByPage(pageParams,queryCourseParamsDto);
         //总记录数
         long total = pageResult.getTotal();
 
