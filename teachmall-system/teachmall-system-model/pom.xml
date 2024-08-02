@@ -8,8 +8,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>teachmall-system-model</artifactId>
-    <name>xuecheng-plus-system-model</name>
-    <description>xuecheng-plus-system-model</description>
+    <name>teachmall-system-model</name>
+    <description>teachmall-system-model</description>
 
     <dependencies>
         <dependency>

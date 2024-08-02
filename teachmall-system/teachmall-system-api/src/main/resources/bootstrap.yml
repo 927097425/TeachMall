@@ -10,7 +10,7 @@ spring:
     active: dev
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${teachmall.db.host}/teachmall_content?serverTimezone=UTC&userUnicode=true&useSSL=false&
+    url: jdbc:mysql://${teachmall.db.host}/teachmall_system?serverTimezone=UTC&userUnicode=true&useSSL=false&
     username: root
     password: ${teachmall.db.pw}
 # 日志文件配置路径
@@ -31,5 +31,5 @@ knife4j:
         group-name: default
         api-rule: package
         api-rule-resources:
-          - com.teachmall.system.api
+          - com.teachmall.system.controller
 

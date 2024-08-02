@@ -1,0 +1,140 @@
+2024-07-31 17:26:07,245 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:28:11,725 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:34:53,443 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:37:53,817 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:41:17,129 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:41:45,528 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
+2024-07-31 17:43:43,361 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'typeResolver', defined in class path resource [com/teachmall/content/config/SwaggerConfig.class], could not be registered. A bean with that name has already been defined in class path resource [springfox/documentation/schema/configuration/ModelsConfiguration.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2024-07-31 17:46:07,318 ERROR [main][LoggingFailureAnalysisReporter.java:40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field typeResolver in com.github.xiaoymin.knife4j.spring.plugin.OperationDynamicResponseModelProvider required a bean of type 'com.fasterxml.classmate.TypeResolver' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.fasterxml.classmate.TypeResolver' in your configuration.
+
