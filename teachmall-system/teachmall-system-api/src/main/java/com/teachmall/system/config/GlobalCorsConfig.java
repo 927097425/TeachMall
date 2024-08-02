@@ -16,9 +16,9 @@ import org.springframework.web.filter.CorsFilter;
   public CorsFilter corsFilter() {
    CorsConfiguration config = new CorsConfiguration();
    //允许白名单域名进行跨域调用
-   config.addAllowedOrigin("localhost:8601");
+   config.addAllowedOrigin("*");
    //允许跨越发送cookie
-   config.setAllowCredentials(true);
+//   config.setAllowCredentials(true);
    //放行全部原始头信息
    config.addAllowedHeader("*");
    //允许所有请求方法跨域调用

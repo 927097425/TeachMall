@@ -1,5 +1,7 @@
 package com.teachmall.content.api;
 
+import com.teachmall.content.model.dto.AddCourseDto;
+import com.teachmall.content.model.dto.CourseBaseInfoDto;
 import com.teachmall.content.model.dto.QueryCourseParamsDto;
 import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.base.model.PageParams;
@@ -27,6 +29,11 @@ public class CourseBaseInfoController {
     public PageResult<CourseBase> list(PageParams pageParams, @RequestBody(required = false) QueryCourseParamsDto queryCourseParamsDto){
         PageResult<CourseBase> courseBasePageResult = courseBaseInfoService.queryCourseBaseList(pageParams,queryCourseParamsDto);
         return courseBasePageResult;
+    }
+    @ApiOperation("新增课程基础信息")
+    @PostMapping("/course")
+    public CourseBaseInfoDto createCourseBase(@RequestBody AddCourseDto addCourseDto){
+        return null;
     }
 
 }
