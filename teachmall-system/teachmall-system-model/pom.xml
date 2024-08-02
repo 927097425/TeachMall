@@ -17,12 +17,8 @@
             <artifactId>teachmall-base</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
-        <!--存在mybatisplus注解添加相关注解保证不报错-->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-annotation</artifactId>
 
-        </dependency>
+
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-core</artifactId>
