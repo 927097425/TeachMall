@@ -29,5 +29,10 @@ public class TeachplanController {
         else teachPlanService.UpdateTeachplan(teachplanDto);
         System.out.println(teachplanDto);
     }
+    @ApiOperation("删除章节")
+    @DeleteMapping("/teachplan/{id}")
+    public void deleteCharacter(@PathVariable Long id){
+        teachPlanService.deleteCharacter(id);
+    }
 
 }

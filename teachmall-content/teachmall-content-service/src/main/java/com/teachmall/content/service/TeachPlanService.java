@@ -14,4 +14,6 @@ public interface TeachPlanService {
 
     public void UpdateTeachplan(TeachplanDto teachplanDto);
     public void insertTeachplan(TeachplanDto teachplanDto);
+
+    void deleteCharacter(Long id);
 }

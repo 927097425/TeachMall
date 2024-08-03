@@ -100,8 +100,10 @@
         order by one.orderby,
                  two.orderby
     </select>
+
     <select id="getTeachplanCount" resultType="java.lang.Integer">
         select count(1) from teachmall_content.teachplan where parentid = #{parentid} and course_id = #{courseId}
     </select>
+
 
 </mapper>

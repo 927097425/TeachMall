@@ -1,5 +1,6 @@
 package com.teachmall.content.service.impl;
 
+import com.teachmall.base.exception.TeachmallException;
 import com.teachmall.content.mapper.TeachplanMapper;
 import com.teachmall.content.mapper.TeachplanMediaMapper;
 import com.teachmall.content.model.dto.TeachplanDto;
@@ -57,6 +58,7 @@ public class TeachPlanServiceImpl implements TeachPlanService {
 
     @Override
     public void insertTeachplan(TeachplanDto teachplanDto) {
+
         int count = teachplanMapper.getTeachplanCount(teachplanDto)+1;
         Teachplan teachplan = new Teachplan();
         BeanUtils.copyProperties(teachplanDto,teachplan);
@@ -77,6 +79,37 @@ public class TeachPlanServiceImpl implements TeachPlanService {
             }
         }
 
+    }
+    @Transactional
+    @Override
+    public void deleteCharacter(Long id) {
+        Teachplan target = teachplanMapper.selectById(id);
+        if(target==null) return;
+        Long courseid = target.getCourseId();
+        List<TeachplanDto> teachplanDtos = teachplanMapper.selectTreeNodes(courseid);
+
+        for(TeachplanDto teachplanDto:teachplanDtos){
+            if(target.getParentid() == 0){
+                if(teachplanDto.getId().equals(id)){
+                    if(teachplanDto.getTeachPlanTreeNodes().size()!=0)throw new TeachmallException("{\"errCode\":\"120409\",\"errMessage\":\"课程计划信息还有子级信息，无法操作\"}");
+                }
+
+            }
+            else if(target.getParentid().equals(teachplanDto.getId())){
+                List<TeachplanDto> children = teachplanDto.getTeachPlanTreeNodes();
+                int i = 1;
+                for(TeachplanDto child :children){
+                    if(!child.getId().equals(id)) {
+                        child.setOrderby(i);
+                        i += 1;
+                    }
+                    else {
+                        if(child.getTeachplanMedia()!=null)teachplanMediaMapper.deleteById(child.getTeachplanMedia());
+                    }
+                }
+            }
+        }
+        teachplanMapper.deleteById(id);
     }
 
 }
