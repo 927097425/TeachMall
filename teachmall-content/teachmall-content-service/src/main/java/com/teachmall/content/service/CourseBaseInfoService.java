@@ -4,6 +4,7 @@ import com.teachmall.base.model.PageParams;
 import com.teachmall.base.model.PageResult;
 import com.teachmall.content.model.dto.AddCourseDto;
 import com.teachmall.content.model.dto.CourseBaseInfoDto;
+import com.teachmall.content.model.dto.EditCourseDto;
 import com.teachmall.content.model.dto.QueryCourseParamsDto;
 import com.teachmall.content.model.po.CourseBase;
 
@@ -16,4 +17,6 @@ import com.teachmall.content.model.po.CourseBase;
 public interface CourseBaseInfoService {
     PageResult<CourseBase> queryCourseBaseList(PageParams pageParams, QueryCourseParamsDto queryCourseParamsDto);
     CourseBaseInfoDto createCourseBase(Long companyId, AddCourseDto addCourseDto);
+     CourseBaseInfoDto getCourseBaseInfo(long courseId);
+     CourseBaseInfoDto updateCourseBase(Long companyId, EditCourseDto dto);
 }

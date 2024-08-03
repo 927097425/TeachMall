@@ -2,6 +2,7 @@ package com.teachmall.content.api;
 
 import com.teachmall.content.model.dto.AddCourseDto;
 import com.teachmall.content.model.dto.CourseBaseInfoDto;
+import com.teachmall.content.model.dto.EditCourseDto;
 import com.teachmall.content.model.dto.QueryCourseParamsDto;
 import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.base.model.PageParams;
@@ -11,9 +12,8 @@ import io.swagger.annotations.Api;
 
 import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -32,9 +32,22 @@ public class CourseBaseInfoController {
     }
     @ApiOperation("新增课程基础信息")
     @PostMapping("/course")
-    public CourseBaseInfoDto createCourseBase(@RequestBody AddCourseDto addCourseDto){
+    public CourseBaseInfoDto createCourseBase(@RequestBody @Validated AddCourseDto addCourseDto){
         Long companyId = 1232141425L;
         return courseBaseInfoService.createCourseBase(companyId,addCourseDto);
+
+    }
+
+    @ApiOperation("根据课程id查询课程基础信息")
+    @GetMapping("/course/{courseId}")
+    public CourseBaseInfoDto getCourseBaseById(@PathVariable Long courseId){
+        return courseBaseInfoService.getCourseBaseInfo(courseId);
+    }
+    @ApiOperation("修改课程基础信息")
+    @PutMapping("/course")
+    public CourseBaseInfoDto updateCourseBase(@RequestBody @Validated EditCourseDto editCourseDto){
+        Long companyId = 1232141425L;
+        return courseBaseInfoService.updateCourseBase(companyId,editCourseDto);
 
     }
 

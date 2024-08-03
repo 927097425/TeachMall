@@ -10,6 +10,7 @@ import com.teachmall.content.mapper.CourseCategoryMapper;
 import com.teachmall.content.mapper.CourseMarketMapper;
 import com.teachmall.content.model.dto.AddCourseDto;
 import com.teachmall.content.model.dto.CourseBaseInfoDto;
+import com.teachmall.content.model.dto.EditCourseDto;
 import com.teachmall.content.model.dto.QueryCourseParamsDto;
 import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.content.model.po.CourseCategory;
@@ -25,7 +26,6 @@ import java.time.LocalDateTime;
 
 /**
  * @Author: 陈靖国
- * @CreateTime: 2024-08-01
  * @Description: 课程管理业务的实现类
  * @Version: 1.0
  */
@@ -161,6 +161,12 @@ public class CourseBaseInfoServiceImpl implements CourseBaseInfoService {
         return courseBaseInfoDto;
 
 
+    }
+    @Transactional
+    @Override
+    public CourseBaseInfoDto updateCourseBase(Long companyId, EditCourseDto dto) {
+        editCourseDto.getId();
+        return null;
     }
 
 }

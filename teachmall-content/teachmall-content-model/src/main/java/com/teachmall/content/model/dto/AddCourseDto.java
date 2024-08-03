@@ -6,7 +6,7 @@ import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
-
+import java.math.BigDecimal;
 
 
 @Data
@@ -51,19 +51,5 @@ public class AddCourseDto {
  private String charge;
 
  @ApiModelProperty(value = "价格")
- private Float price;
- @ApiModelProperty(value = "原价")
- private Float originalPrice;
-
-
- @ApiModelProperty(value = "qq")
- private String qq;
-
- @ApiModelProperty(value = "微信")
- private String wechat;
- @ApiModelProperty(value = "电话")
- private String phone;
-
- @ApiModelProperty(value = "有效期")
- private Integer validDays;
+ private BigDecimal price;
 }
