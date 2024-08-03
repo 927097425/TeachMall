@@ -11,4 +11,5 @@ import java.util.List;
 public interface TeachplanMapper extends BaseMapper<Teachplan> {
     public List<TeachplanDto> selectTreeNodes(long courseId);
 
+    int getTeachplanCount(TeachplanDto teachplanDto);
 }

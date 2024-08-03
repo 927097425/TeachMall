@@ -22,13 +22,13 @@
         <module name="teachmall-content-service" />
         <module name="teachmall-system-api" />
         <module name="teachmall-system-service" />
-        <module name="teachmall-generator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
       <module name="demo" target="1.8" />
       <module name="teachmall-content-model (1)" target="1.8" />
       <module name="teachmall-content-model (2)" target="1.8" />
+      <module name="teachmall-generator" target="1.8" />
       <module name="xuecheng-plus-content" target="1.8" />
       <module name="xuecheng-plus-content-model" target="1.5" />
       <module name="xuecheng-plus-parent" target="1.8" />

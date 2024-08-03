@@ -11,4 +11,7 @@ import java.util.List;
  */
 public interface TeachPlanService {
     public List<TeachplanDto> findTeachplanTree(long courseId);
+
+    public void UpdateTeachplan(TeachplanDto teachplanDto);
+    public void insertTeachplan(TeachplanDto teachplanDto);
 }

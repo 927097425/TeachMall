@@ -6,9 +6,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -23,6 +21,13 @@ public class TeachplanController {
     @GetMapping("/teachplan/{courseId}/tree-nodes")
     public List<TeachplanDto> getTreeNodes(@PathVariable Long courseId){
         return teachPlanService.findTeachplanTree(courseId);
+    }
+    @ApiOperation("修改增加课程计划")
+    @PostMapping("/teachplan")
+    public void saveTeachlplan(@RequestBody TeachplanDto teachplanDto){
+        if(teachplanDto.getId()==null) teachPlanService.insertTeachplan(teachplanDto);
+        else teachPlanService.UpdateTeachplan(teachplanDto);
+        System.out.println(teachplanDto);
     }
 
 }
