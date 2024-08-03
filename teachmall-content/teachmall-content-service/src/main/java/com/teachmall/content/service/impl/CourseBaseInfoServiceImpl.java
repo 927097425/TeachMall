@@ -10,7 +10,6 @@ import com.teachmall.content.mapper.CourseCategoryMapper;
 import com.teachmall.content.mapper.CourseMarketMapper;
 import com.teachmall.content.model.dto.AddCourseDto;
 import com.teachmall.content.model.dto.CourseBaseInfoDto;
-import com.teachmall.content.model.dto.EditCourseDto;
 import com.teachmall.content.model.dto.QueryCourseParamsDto;
 import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.content.model.po.CourseCategory;
@@ -164,9 +163,31 @@ public class CourseBaseInfoServiceImpl implements CourseBaseInfoService {
     }
     @Transactional
     @Override
-    public CourseBaseInfoDto updateCourseBase(Long companyId, EditCourseDto dto) {
-        editCourseDto.getId();
-        return null;
+    public CourseBaseInfoDto updateCourseBase(Long companyId, CourseBaseInfoDto dto) {
+
+        //课程id
+        Long courseId = dto.getId();
+        CourseBase courseBase = courseBaseMapper.selectById(courseId);
+        if(courseBase==null){
+            TeachmallException.cast("课程不存在");
+        }
+
+        //校验本机构只能修改本机构的课程
+        if(!courseBase.getCompanyId().equals(companyId)){
+            TeachmallException.cast("本机构只能修改本机构的课程");
+        }
+        CourseMarket courseMarket = new CourseMarket();
+        BeanUtils.copyProperties(dto,courseBase);
+        courseBase.setChangeDate(LocalDateTime.now());
+
+        BeanUtils.copyProperties(dto,courseMarket);
+        int i = courseBaseMapper.updateById(courseBase);
+
+        saveCourseMarket(courseMarket);
+
+        //查询课程信息
+        CourseBaseInfoDto courseBaseInfo = this.getCourseBaseInfo(courseId);
+        return courseBaseInfo;
     }
 
 }

@@ -3,6 +3,7 @@ package com.teachmall.content.service.impl;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.teachmall.content.mapper.CourseCategoryMapper;
 import com.teachmall.content.model.dto.CourseCategoryTreeDto;
+import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.content.model.po.CourseCategory;
 import com.teachmall.content.service.CourseCategoryInfoService;
 import lombok.AllArgsConstructor;
@@ -36,4 +37,5 @@ public class CourseCategoryInfoServiceImpl implements CourseCategoryInfoService 
         }
         return courseCategoryTreeDtos;
     }
+
 }

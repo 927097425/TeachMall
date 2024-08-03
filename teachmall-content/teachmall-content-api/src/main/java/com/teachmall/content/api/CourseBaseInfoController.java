@@ -2,7 +2,6 @@ package com.teachmall.content.api;
 
 import com.teachmall.content.model.dto.AddCourseDto;
 import com.teachmall.content.model.dto.CourseBaseInfoDto;
-import com.teachmall.content.model.dto.EditCourseDto;
 import com.teachmall.content.model.dto.QueryCourseParamsDto;
 import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.base.model.PageParams;
@@ -14,10 +13,6 @@ import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
-
-import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.List;
 
 @Api(tags = "课程相关接口")
 @RestController
@@ -45,9 +40,9 @@ public class CourseBaseInfoController {
     }
     @ApiOperation("修改课程基础信息")
     @PutMapping("/course")
-    public CourseBaseInfoDto updateCourseBase(@RequestBody @Validated EditCourseDto editCourseDto){
+    public CourseBaseInfoDto updateCourseBase(@RequestBody @Validated CourseBaseInfoDto courseBaseInfoDto){
         Long companyId = 1232141425L;
-        return courseBaseInfoService.updateCourseBase(companyId,editCourseDto);
+        return courseBaseInfoService.updateCourseBase(companyId,courseBaseInfoDto);
 
     }
 
