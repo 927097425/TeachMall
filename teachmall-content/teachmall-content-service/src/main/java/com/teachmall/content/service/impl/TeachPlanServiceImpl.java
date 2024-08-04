@@ -111,5 +111,122 @@ public class TeachPlanServiceImpl implements TeachPlanService {
         }
         teachplanMapper.deleteById(id);
     }
+    @Transactional
+    @Override
+    public void moveupTeachplan(Long id) {
+        Teachplan target = teachplanMapper.selectById(id);
+        if(target==null) return;
+        Long courseid = target.getCourseId();
+        List<TeachplanDto> teachplanDtos = teachplanMapper.selectTreeNodes(courseid);
+        int count = 1;
+        TeachplanDto predto =null;
+        for(TeachplanDto teachplanDto:teachplanDtos){
+
+            if(target.getParentid() == 0){
+                if(teachplanDto.getId().equals(id)){
+                    if(count==1)throw new TeachmallException("已经是最上层了无法再继续上移");
+                    else{
+                        teachplanDto.setOrderby(predto.getOrderby());
+                        if(predto!=null)predto.setOrderby(count);
+                        Teachplan teachplan = new Teachplan();
+                        BeanUtils.copyProperties(teachplanDto,teachplan);
+                        teachplanMapper.updateById(teachplan);
+                        BeanUtils.copyProperties(predto,teachplan);
+                        teachplanMapper.updateById(teachplan);
+                        return;
+                    }
+                }
+                else{
+                    teachplanDto.setOrderby(count);
+                }
+
+            }
+            else if(target.getParentid().equals(teachplanDto.getId())){
+                List<TeachplanDto> children = teachplanDto.getTeachPlanTreeNodes();
+                Teachplan prechild = null;
+                int i = 1;
+                for(TeachplanDto child :children){
+                    if(child.getId().equals(id)){
+                        if(i==1)throw new TeachmallException("已经是最上层了无法再继续上移");
+                        else{
+                            child.setOrderby(prechild.getOrderby());
+                            if(prechild!=null)prechild.setOrderby(i);
+                            Teachplan teachplan = new Teachplan();
+                            BeanUtils.copyProperties(child,teachplan);
+                            teachplanMapper.updateById(teachplan);
+                            BeanUtils.copyProperties(prechild,teachplan);
+                            teachplanMapper.updateById(teachplan);
+                            return;
+                        }
+
+                    }
+                    else{
+                        teachplanDto.setOrderby(i);
+                    }
+                    prechild = child;
+                    i++;
+                }
+            }
+            predto = teachplanDto;
+            count++;
+        }
+
+    }
+
+    @Override
+    public void movedownTeachplan(Long id) {
+        Teachplan target = teachplanMapper.selectById(id);
+        if(target==null) return;
+        Long courseid = target.getCourseId();
+        List<TeachplanDto> teachplanDtos = teachplanMapper.selectTreeNodes(courseid);
+        int count = 1;
+        TeachplanDto predto =null;
+        for(TeachplanDto teachplanDto:teachplanDtos){
+            if(target.getParentid() == 0){
+                if(teachplanDto.getId().equals(id)&&count==teachplanDtos.size())throw new TeachmallException("已经是最下层了无法再继续下移");
+                if(predto != null && predto.getId().equals(id)){
+                    teachplanDto.setOrderby(predto.getOrderby());
+                    predto.setOrderby(count);
+                    Teachplan teachplan = new Teachplan();
+                    BeanUtils.copyProperties(teachplanDto,teachplan);
+                    teachplanMapper.updateById(teachplan);
+                    BeanUtils.copyProperties(predto,teachplan);
+                    teachplanMapper.updateById(teachplan);
+                    return;
+
+                }
+                else{
+                    teachplanDto.setOrderby(count);
+                }
+
+            }
+            else if(target.getParentid().equals(teachplanDto.getId())){
+                List<TeachplanDto> children = teachplanDto.getTeachPlanTreeNodes();
+                Teachplan prechild = null;
+                int i = 1;
+                for(TeachplanDto child :children){
+                    if(child.getId().equals(id)&&i == children.size())throw new TeachmallException("已经是最下层了无法再继续下移");
+                    if(prechild!=null&&prechild.getId().equals(id)){
+                        child.setOrderby(prechild.getOrderby());
+                        prechild.setOrderby(i);
+                        Teachplan teachplan = new Teachplan();
+                        BeanUtils.copyProperties(child,teachplan);
+                        teachplanMapper.updateById(teachplan);
+                        BeanUtils.copyProperties(prechild,teachplan);
+                        teachplanMapper.updateById(teachplan);
+                        return;
+
+                    }
+                    else{
+                        teachplanDto.setOrderby(i);
+                    }
+                    prechild = child;
+                    i++;
+                }
+            }
+            predto = teachplanDto;
+            count++;
+        }
+    }
 
 }
