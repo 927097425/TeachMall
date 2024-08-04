@@ -20,6 +20,6 @@ public class CourseTeacherServiceImpl implements CourseTeacherService {
     @Override
     public List<CourseTeacher> getTeacherInfo(Long courseid) {
         List<CourseTeacher> teacherInfo = courseTeacherMapper.getTeacherInfo(courseid);
-        return null;
+        return teacherInfo;
     }
 }

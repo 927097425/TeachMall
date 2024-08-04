@@ -28,5 +28,6 @@ public class CourseTeacherController {
     public List<CourseTeacher> getTeacherInfo(@PathVariable Long courseid){
 
         List<CourseTeacher> courseTeachers = courseTeacherService.getTeacherInfo(courseid);
+        return courseTeachers;
     }
 }
