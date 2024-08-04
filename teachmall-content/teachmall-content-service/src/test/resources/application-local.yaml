@@ -1,4 +1,4 @@
-teachmall:
-  db:
-    host: mysql
-    pw: 123
+#teachmall:
+#  db:
+#    host: mysql
+#    pw: 123
