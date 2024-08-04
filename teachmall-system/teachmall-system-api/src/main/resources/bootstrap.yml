@@ -6,6 +6,12 @@ server:
 spring:
   application:
     name: system-api
+  cloud:
+    nacos:
+      server-addr: 8.138.159.37
+      discovery:
+        namespace: dev
+        group: teachmall-project
   profiles:
     active: dev
   datasource:
