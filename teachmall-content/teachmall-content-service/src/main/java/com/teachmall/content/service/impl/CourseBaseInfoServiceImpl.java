@@ -5,9 +5,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.teachmall.base.exception.TeachmallException;
 import com.teachmall.base.model.PageParams;
 import com.teachmall.base.model.PageResult;
-import com.teachmall.content.mapper.CourseBaseMapper;
-import com.teachmall.content.mapper.CourseCategoryMapper;
-import com.teachmall.content.mapper.CourseMarketMapper;
+import com.teachmall.content.mapper.*;
 import com.teachmall.content.model.dto.AddCourseDto;
 import com.teachmall.content.model.dto.CourseBaseInfoDto;
 import com.teachmall.content.model.dto.QueryCourseParamsDto;
@@ -15,6 +13,7 @@ import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.content.model.po.CourseCategory;
 import com.teachmall.content.model.po.CourseMarket;
 import com.teachmall.content.service.CourseBaseInfoService;
+import com.teachmall.content.service.CourseTeacherService;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.BeanUtils;
@@ -36,6 +35,10 @@ public class CourseBaseInfoServiceImpl implements CourseBaseInfoService {
     private final CourseBaseMapper courseBaseMapper;
     private final CourseMarketMapper courseMarketMapper;
     private final CourseCategoryMapper courseCategoryMapper;
+    private final CourseTeacherMapper courseTeacherMapper;
+    private final TeachplanMapper teachplanMapper;
+    private final TeachplanMediaMapper teachplanMediaMapper;
+
     @Override
     public PageResult<CourseBase> queryCourseBaseList(PageParams pageParams, QueryCourseParamsDto queryCourseParamsDto) {
         LambdaQueryWrapper<CourseBase> queryWrapper = new LambdaQueryWrapper<>();
@@ -188,6 +191,20 @@ public class CourseBaseInfoServiceImpl implements CourseBaseInfoService {
         //查询课程信息
         CourseBaseInfoDto courseBaseInfo = this.getCourseBaseInfo(courseId);
         return courseBaseInfo;
+    }
+    @Transactional
+    @Override
+    public void deleteCourse(Long courseid) {
+
+//        删除课程相关的基本信息
+        courseBaseMapper.deleteById(courseid);
+//        营销信息
+        courseMarketMapper.deleteById(courseid);
+//        课程计划
+        teachplanMediaMapper.deleteByCourseId(courseid);
+        teachplanMapper.deleteByCourseId(courseid);
+//        课程教师信息
+        courseTeacherMapper.deleteByCourseId(courseid);
     }
 
 }

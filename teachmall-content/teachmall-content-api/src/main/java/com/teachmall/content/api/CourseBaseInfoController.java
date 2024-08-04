@@ -2,6 +2,7 @@ package com.teachmall.content.api;
 
 import com.teachmall.content.model.dto.AddCourseDto;
 import com.teachmall.content.model.dto.CourseBaseInfoDto;
+import com.teachmall.content.model.dto.CourseTeacherInfoDto;
 import com.teachmall.content.model.dto.QueryCourseParamsDto;
 import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.base.model.PageParams;
@@ -44,6 +45,11 @@ public class CourseBaseInfoController {
         Long companyId = 1232141425L;
         return courseBaseInfoService.updateCourseBase(companyId,courseBaseInfoDto);
 
+    }
+    @ApiOperation("删除课程基础信息")
+    @DeleteMapping("/course/{courseid}")
+    public void deleteCourse(@PathVariable Long courseid){
+        courseBaseInfoService.deleteCourse(courseid);
     }
 
 }

@@ -18,5 +18,9 @@
     <sql id="Base_Column_List">
         id, media_id, teachplan_id, course_id, media_fileName, create_date, create_people, change_people
     </sql>
+    <delete id="deleteByCourseId">
+        delete from teachmall_content.teachplan_media where course_id = #{value};
+
+    </delete>
 
 </mapper>

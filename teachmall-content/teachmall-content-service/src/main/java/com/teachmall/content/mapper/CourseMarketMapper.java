@@ -6,4 +6,5 @@ import com.teachmall.content.model.po.CourseMarket;
 
 public interface CourseMarketMapper extends BaseMapper<CourseMarket> {
 
+
 }

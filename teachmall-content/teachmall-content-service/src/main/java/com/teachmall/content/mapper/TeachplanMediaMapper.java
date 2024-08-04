@@ -6,5 +6,6 @@ import com.teachmall.content.model.po.TeachplanMedia;
 
 
 public interface TeachplanMediaMapper extends BaseMapper<TeachplanMedia> {
+    void deleteByCourseId(long courseId);
 
 }

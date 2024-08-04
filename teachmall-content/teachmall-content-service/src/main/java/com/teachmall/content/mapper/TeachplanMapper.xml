@@ -26,6 +26,9 @@
     <sql id="Base_Column_List">
         id, pname, parentid, grade, media_type, start_time, end_time, description, timelength, orderby, course_id, course_pub_id, status, is_preview, create_date, change_date
     </sql>
+    <delete id="deleteByCourseId">
+        delete from teachmall_content.teachplan where course_id = #{value}
+    </delete>
     <!-- 课程分类树型结构查询映射结果 -->
     <resultMap id="treeNodeResultMap" type="com.teachmall.content.model.dto.TeachplanDto">
         <!-- 一级数据映射 -->
