@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: media-service
+  cloud:
+    nacos:
+      server-addr: 8.138.159.37:8848
+      discovery:
+        namespace: ${spring.profiles.active}
+        group: teachmall-project
+      config:
+        namespace: ${spring.profiles.active}
+        group: teachmall-project
+        file-extension: yaml
+        refresh-enabled: true
+      shared-configs:
+        - data-id: database-${spring.profiles.active}.yaml
+          group: teachmall-project
+          refresh: true
+        - data-id: logging-${spring.profiles.active}.yaml
+          group: teachmall-project
+          refresh: true
+
+#profiles默认为dev
+  profiles:
+    active: dev
+
+
+

@@ -1,8 +1,8 @@
-server:
-  servlet:
-    context-path: /system
-  port: 63110
-#微服务配置
+#server:
+#  servlet:
+#    context-path: /system
+#  port: 63110
+##微服务配置
 spring:
   application:
     name: system-api
@@ -12,30 +12,39 @@ spring:
       discovery:
         namespace: dev
         group: teachmall-project
+      config:
+        namespace: dev
+        group: teachmall-project
+        file-extension: yaml
+        refresh-enabled: true
+        shared-configs:
+          - data-id: database-${spring.profiles.active}.yaml
+            group: database-commom
+            refresh: true
   profiles:
     active: dev
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${teachmall.db.host}/teachmall_system?serverTimezone=UTC&userUnicode=true&useSSL=false&
-    username: root
-    password: ${teachmall.db.pw}
-# 日志文件配置路径
-logging:
-  config: classpath:log4j2-dev.xml
-
-# swagger 文档配置
-knife4j:
-  enable: true
-  openapi:
-    title: 教育商城系统管理模块接口文档
-    description: "教育商城系统管理模块接口文档"
-    email: 927097425@qq.com
-    concat: 陈靖国
-    version: v1.0.0
-    group:
-      default:
-        group-name: default
-        api-rule: package
-        api-rule-resources:
-          - com.teachmall.system.controller
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://${teachmall.db.host}/teachmall_system?serverTimezone=UTC&userUnicode=true&useSSL=false&
+#    username: root
+#    password: ${teachmall.db.pw}
+## 日志文件配置路径
+#logging:
+#  config: classpath:log4j2-dev.xml
+#
+## swagger 文档配置
+#knife4j:
+#  enable: true
+#  openapi:
+#    title: 教育商城系统管理模块接口文档
+#    description: "教育商城系统管理模块接口文档"
+#    email: 927097425@qq.com
+#    concat: 陈靖国
+#    version: v1.0.0
+#    group:
+#      default:
+#        group-name: default
+#        api-rule: package
+#        api-rule-resources:
+#          - com.teachmall.system.controller
 

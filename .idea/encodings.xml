@@ -13,8 +13,18 @@
     <file url="file://$PROJECT_DIR$/teachmall-content/teachmall-content-model/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/teachmall-content/teachmall-content-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/teachmall-content/teachmall-content-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teachmall-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teachmall-gateway/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/teachmall-generator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/teachmall-generator/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teachmall-media/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teachmall-media/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teachmall-media/teachmall-media-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teachmall-media/teachmall-media-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teachmall-media/teachmall-media-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teachmall-media/teachmall-media-model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teachmall-media/teachmall-media-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/teachmall-media/teachmall-media-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/teachmall-parent/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/teachmall-parent/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/teachmall-system/src/main/java" charset="UTF-8" />

@@ -8,7 +8,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
       </profile>
-      <profile name="Annotation profile for teachmall-system" enabled="true">
+      <profile name="Annotation profile for teachmall-media" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -18,10 +18,14 @@
         <module name="teachmall-system-model" />
         <module name="teachmall-content-model" />
         <module name="teachmall-content-api" />
+        <module name="teachmall-media-service" />
         <module name="teachmall-base" />
+        <module name="teachmall-media-api" />
         <module name="teachmall-content-service" />
         <module name="teachmall-system-api" />
         <module name="teachmall-system-service" />
+        <module name="teachmall-gateway" />
+        <module name="teachmall-media-model" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
@@ -31,6 +35,7 @@
       <module name="teachmall-generator" target="1.8" />
       <module name="xuecheng-plus-content" target="1.8" />
       <module name="xuecheng-plus-content-model" target="1.5" />
+      <module name="xuecheng-plus-media-api" target="1.5" />
       <module name="xuecheng-plus-parent" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -41,7 +46,12 @@
       <module name="teachmall-content-api" options="-parameters" />
       <module name="teachmall-content-model" options="-parameters" />
       <module name="teachmall-content-service" options="-parameters" />
+      <module name="teachmall-gateway" options="-parameters" />
       <module name="teachmall-generator" options="-parameters" />
+      <module name="teachmall-media" options="-parameters" />
+      <module name="teachmall-media-api" options="-parameters" />
+      <module name="teachmall-media-model" options="-parameters" />
+      <module name="teachmall-media-service" options="-parameters" />
       <module name="teachmall-parent" options="-parameters" />
       <module name="teachmall-system" options="-parameters" />
       <module name="teachmall-system-api" options="-parameters" />
