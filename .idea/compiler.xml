@@ -7,6 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="xxl-job-core" />
+        <module name="xxl-job-admin" />
+        <module name="xxl-job-executor-sample-springboot" />
+        <module name="xxl-job-executor-sample-frameless" />
       </profile>
       <profile name="Annotation profile for teachmall-system" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
