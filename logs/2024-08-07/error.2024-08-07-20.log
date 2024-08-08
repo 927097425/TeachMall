@@ -1,0 +1,394 @@
+2024-08-07 20:49:57,607 ERROR [nacos-grpc-client-executor-2157][LoggerUtils.java:99] - [1723026443560_223.73.111.142_57207]Request stream error, switch server,error=com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: CANCELLED: HTTP/2 error code: CANCEL
+Received Rst Stream
+2024-08-07 20:49:57,607 ERROR [nacos-grpc-client-executor-2212][LoggerUtils.java:99] - [1723026465252_223.73.111.142_35989]Request stream error, switch server,error=com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: CANCELLED: HTTP/2 error code: CANCEL
+Received Rst Stream
+2024-08-07 20:49:59,586 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:49:59,586 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:49:59,769 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:49:59,769 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:49:59,787 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:49:59,794 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:01,786 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:01,794 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:01,961 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:01,988 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:01,991 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:02,005 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:03,917 ERROR [com.alibaba.nacos.client.naming.updater.3][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:04,022 ERROR [com.alibaba.nacos.client.naming.updater.3][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:04,094 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:04,108 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:04,128 ERROR [com.alibaba.nacos.client.naming.updater.3][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:04,242 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:04,272 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:04,291 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:04,302 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:06,473 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:06,495 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:06,639 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:06,655 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:06,687 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:06,703 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:07,365 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:07,471 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:07,576 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:08,103 ERROR [com.alibaba.nacos.client.naming.updater.6][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:08,207 ERROR [com.alibaba.nacos.client.naming.updater.6][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:08,313 ERROR [com.alibaba.nacos.client.naming.updater.6][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:08,967 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:08,985 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:09,117 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:09,178 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:09,178 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:09,190 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:09,693 ERROR [com.alibaba.nacos.client.naming.updater.4][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:09,798 ERROR [com.alibaba.nacos.client.naming.updater.4][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:09,902 ERROR [com.alibaba.nacos.client.naming.updater.4][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:10,427 ERROR [com.alibaba.nacos.client.naming.updater.2][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:10,531 ERROR [com.alibaba.nacos.client.naming.updater.2][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:10,636 ERROR [com.alibaba.nacos.client.naming.updater.2][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:11,573 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:11,588 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:11,746 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:11,770 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:11,784 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:11,799 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:14,014 ERROR [com.alibaba.nacos.client.naming.updater.1][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:14,119 ERROR [com.alibaba.nacos.client.naming.updater.1][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:14,224 ERROR [com.alibaba.nacos.client.naming.updater.1][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:14,248 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:14,297 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:14,445 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:14,447 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:14,475 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:14,493 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:14,752 ERROR [com.alibaba.nacos.client.naming.updater.3][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:14,857 ERROR [com.alibaba.nacos.client.naming.updater.3][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:14,962 ERROR [com.alibaba.nacos.client.naming.updater.3][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:17,035 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:17,083 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:17,233 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:17,233 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:17,264 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:17,278 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:19,922 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:19,985 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:20,119 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:20,119 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:20,133 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:20,162 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:20,243 ERROR [com.alibaba.nacos.client.naming.updater.0][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:20,348 ERROR [com.alibaba.nacos.client.naming.updater.0][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:20,454 ERROR [com.alibaba.nacos.client.naming.updater.0][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:22,339 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:22,444 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:22,549 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:22,904 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:22,949 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:23,075 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:23,086 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:23,101 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:23,103 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:23,135 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:23,180 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:23,285 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:25,971 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:26,017 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:26,169 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:26,181 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:26,203 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:26,212 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:29,129 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:29,189 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:29,370 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:29,371 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:29,373 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:29,392 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:32,443 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:32,493 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:32,637 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:32,654 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:32,668 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:32,689 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:35,830 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:35,896 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:35,994 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:36,040 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:36,041 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:36,075 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:38,669 ERROR [com.alibaba.nacos.client.naming.updater.6][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:38,774 ERROR [com.alibaba.nacos.client.naming.updater.6][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:38,878 ERROR [com.alibaba.nacos.client.naming.updater.6][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:39,311 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:39,362 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:39,404 ERROR [com.alibaba.nacos.client.naming.updater.4][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:39,478 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:39,504 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:39,509 ERROR [com.alibaba.nacos.client.naming.updater.4][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:39,518 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:39,578 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:39,614 ERROR [com.alibaba.nacos.client.naming.updater.4][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:42,883 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:42,945 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:43,048 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:43,095 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:43,097 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:43,140 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:46,553 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:46,657 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:46,722 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:46,764 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:46,794 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:46,822 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:49,538 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:49,644 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:49,674 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:49,749 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:49,779 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:49,884 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:50,331 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:50,436 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:50,498 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:50,529 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:50,564 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:50,617 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:51,888 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:51,994 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:52,038 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:52,099 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:52,144 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:52,249 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:52,565 ERROR [com.alibaba.nacos.client.naming.updater.2][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:52,670 ERROR [com.alibaba.nacos.client.naming.updater.2][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:52,777 ERROR [com.alibaba.nacos.client.naming.updater.2][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:54,219 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:54,322 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:54,368 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:54,413 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:54,427 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:54,487 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:56,212 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:56,318 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:56,363 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:56,423 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:56,468 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:56,572 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:50:58,786 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:59,235 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 4 milliseconds, 801900 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@63710cc4[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@42f7a72, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@2d7935c7, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@46850b80}}}}}]]
+2024-08-07 20:50:59,281 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.TimeoutException: Waited 3000 milliseconds (plus 5 milliseconds, 207300 nanoseconds delay) for com.alibaba.nacos.shaded.io.grpc.stub.ClientCalls$GrpcFuture@63ddff26[status=PENDING, info=[GrpcFuture{clientCall={delegate={delegate=ClientCallImpl{method=MethodDescriptor{fullMethodName=Request/request, type=UNARY, idempotent=false, safe=false, sampledToLocalTracing=true, requestMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@5278385e, responseMarshaller=com.alibaba.nacos.shaded.io.grpc.protobuf.lite.ProtoLiteUtils$MessageMarshaller@20cc8b67, schemaDescriptor=com.alibaba.nacos.api.grpc.auto.RequestGrpc$RequestMethodDescriptorSupplier@2c646497}}}}}]]
+2024-08-07 20:50:59,305 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:59,305 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:50:59,306 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:02,875 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:03,339 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:03,375 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:03,384 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:03,399 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:03,438 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:04,542 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:04,648 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:04,693 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:04,753 ERROR [com.alibaba.nacos.client.naming.updater.7][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:04,798 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:04,902 ERROR [com.alibaba.nacos.client.naming.updater.5][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:07,056 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:07,523 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:07,567 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:07,568 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:07,580 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:07,649 ERROR [com.alibaba.nacos.client.remote.worker][LoggerUtils.java:99] - Server check fail, please check server 8.138.159.37 ,port 9848 is available , error =java.util.concurrent.ExecutionException: com.alibaba.nacos.shaded.io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+2024-08-07 20:51:10,986 ERROR [com.alibaba.nacos.client.naming.updater.1][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:11,091 ERROR [com.alibaba.nacos.client.naming.updater.1][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:11,193 ERROR [com.alibaba.nacos.client.naming.updater.1][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:11,723 ERROR [com.alibaba.nacos.client.naming.updater.3][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 0, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:11,829 ERROR [com.alibaba.nacos.client.naming.updater.3][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 1, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:51:11,933 ERROR [com.alibaba.nacos.client.naming.updater.3][LoggerUtils.java:99] - Send request fail, request = ServiceQueryRequest{headers={app=unknown}, requestId='null'}, retryTimes = 2, errorMessage = Client not connected, current status:UNHEALTHY
+2024-08-07 20:54:42,983 ERROR [xxl-job, executor ExecutorRegistryThread][XxlJobRemotingUtil.java:143] - Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-07 20:55:15,071 ERROR [xxl-job, executor ExecutorRegistryThread][XxlJobRemotingUtil.java:143] - Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-07 20:55:47,168 ERROR [xxl-job, executor ExecutorRegistryThread][XxlJobRemotingUtil.java:143] - Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-07 20:56:00,115 ERROR [xxl-job, executor ExecutorRegistryThread][XxlJobRemotingUtil.java:143] - Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registryRemove(AdminBizClient.java:47)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:84)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-07 20:56:14,747 ERROR [xxl-job, executor ExecutorRegistryThread][XxlJobRemotingUtil.java:143] - Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-07 20:56:46,876 ERROR [xxl-job, executor ExecutorRegistryThread][XxlJobRemotingUtil.java:143] - Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-07 20:57:19,000 ERROR [xxl-job, executor ExecutorRegistryThread][XxlJobRemotingUtil.java:143] - Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-07 20:57:51,073 ERROR [xxl-job, executor ExecutorRegistryThread][XxlJobRemotingUtil.java:143] - Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registry(AdminBizClient.java:42)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:48)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+2024-08-07 20:58:23,012 ERROR [xxl-job, executor ExecutorRegistryThread][XxlJobRemotingUtil.java:143] - Connection refused: no further information
+java.net.ConnectException: Connection refused: no further information
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at java.base/sun.net.NetworkClient.doConnect(NetworkClient.java:178)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:534)
+	at java.base/sun.net.www.http.HttpClient.openServer(HttpClient.java:639)
+	at java.base/sun.net.www.http.HttpClient.<init>(HttpClient.java:282)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:387)
+	at java.base/sun.net.www.http.HttpClient.New(HttpClient.java:409)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1309)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1242)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1128)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:1057)
+	at com.xxl.job.core.util.XxlJobRemotingUtil.postBody(XxlJobRemotingUtil.java:99)
+	at com.xxl.job.core.biz.client.AdminBizClient.registryRemove(AdminBizClient.java:47)
+	at com.xxl.job.core.thread.ExecutorRegistryThread$1.run(ExecutorRegistryThread.java:84)
+	at java.base/java.lang.Thread.run(Thread.java:842)

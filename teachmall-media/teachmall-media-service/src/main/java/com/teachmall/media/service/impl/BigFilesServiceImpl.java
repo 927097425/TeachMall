@@ -3,8 +3,10 @@ package com.teachmall.media.service.impl;
 import com.teachmall.base.exception.TeachmallException;
 import com.teachmall.base.model.RestResponse;
 import com.teachmall.media.mapper.MediaFilesMapper;
+import com.teachmall.media.mapper.MediaProcessMapper;
 import com.teachmall.media.model.dto.UploadFileParamsDto;
 import com.teachmall.media.model.po.MediaFiles;
+import com.teachmall.media.model.po.MediaProcess;
 import com.teachmall.media.service.BigFilesService;
 import com.teachmall.media.service.MediaFileService;
 import io.minio.*;
@@ -48,6 +50,8 @@ public class BigFilesServiceImpl implements BigFilesService {
     @Autowired
     @Lazy
     BigFilesService currentProxy;
+    @Autowired
+    MediaProcessMapper mediaProcessMapper;
 
     @Override
     public RestResponse<Boolean> checkFile(String fileMd5) {
@@ -225,12 +229,33 @@ public class BigFilesServiceImpl implements BigFilesService {
                 TeachmallException.cast("保存文件信息失败");
             }
             log.debug("保存文件信息到数据库成功,{}",mediaFiles.toString());
-
+            //添加到待处理任务表
+            addWaitingTask(mediaFiles);
+            log.debug("保存文件信息到数据库成功,{}", mediaFiles.toString());
         }
         return mediaFiles;
 
     }
-
+    /**
+     * 添加待处理任务
+     * @param mediaFiles 媒资文件信息
+     */
+    private void addWaitingTask(MediaFiles mediaFiles){
+        //文件名称
+        String filename = mediaFiles.getFilename();
+        //文件扩展名
+        String extension = filename.substring(filename.lastIndexOf("."));
+        //文件mimeType
+        String mimeType = mediaFileService.getMimeType(extension);
+        //如果是avi视频添加到视频待处理表
+        if(mimeType.equals("video/x-msvideo")){
+            MediaProcess mediaProcess = new MediaProcess();
+            BeanUtils.copyProperties(mediaFiles,mediaProcess);
+            mediaProcess.setStatus("1");//未处理
+            mediaProcess.setFailCount(0);//失败次数默认为0
+            mediaProcessMapper.insert(mediaProcess);
+        }
+    }
     /**
      * 从minio下载文件
      * @param bucket 桶
