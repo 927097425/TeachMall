@@ -18,11 +18,7 @@
     <sql id="Base_Column_List">
         id, file_id, filename, bucket, status, create_date, finish_date, url
     </sql>
-    <update id="startTask">
-        update teachmall_media.media_process m set m.status='4' where (m.status='1' or m.status='3') and m.fail_count < 3 and m.id=#{id}
-    </update>
-    <select id="selectListByShardIndex" resultType="com.teachmall.media.model.po.MediaProcess">
-        select * from teachmall_media.media_process t where t.id % #{shardTotal} = #{shardIndex} and (t.status = '1' or t.status = '3') and t.fail_count < 3 limit #{count}
-    </select>
+
+
 
 </mapper>

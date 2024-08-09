@@ -22,5 +22,13 @@
         delete from teachmall_content.teachplan_media where course_id = #{value};
 
     </delete>
+    <delete id="deleteByPlanId">
+        delete from teachmall_content.teachplan_media
+               <where>
+                   <if test="teachPlanId != null">teachplan_id = #{teachPlanId} </if>
+                   <if test="mediaId != null"> and media_id=#{mediaId} </if>
+               </where>
+
+    </delete>
 
 </mapper>

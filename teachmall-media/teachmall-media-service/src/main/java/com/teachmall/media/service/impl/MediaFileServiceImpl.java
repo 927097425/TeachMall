@@ -133,6 +133,11 @@ public class MediaFileServiceImpl implements MediaFileService {
 
  }
 
+ @Override
+ public MediaFiles getFileById(String mediaId) {
+  return mediaFilesMapper.selectById(mediaId);
+ }
+
  //查询信息用的service
  @Override
  public PageResult<MediaFiles> queryMediaFiels(Long companyId,PageParams pageParams, QueryMediaParamsDto queryMediaParamsDto) {

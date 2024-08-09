@@ -1,0 +1,2 @@
+2024-08-08 23:00:01,587 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:155] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00
+2024-08-08 23:00:01,587 DEBUG [com.alibaba.nacos.naming.failover][FailoverReactor.java:155] - failover switch is not found, failover00-00---000-VIPSRV_FAILOVER_SWITCH-000---00-00

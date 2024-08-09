@@ -17,6 +17,9 @@ spring:
           - data-id: database-${spring.profiles.active}.yaml
             group: database-commom
             refresh: true
+          - data-id: freemarker-config-${spring.profiles.active}.yaml
+            group: teachmall-project
+            refresh: true
 
   profiles:
     active: dev
