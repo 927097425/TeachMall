@@ -12,7 +12,7 @@
         <module name="xxl-job-executor-sample-springboot" />
         <module name="xxl-job-executor-sample-frameless" />
       </profile>
-      <profile name="Annotation profile for teachmall-system" enabled="true">
+      <profile name="Annotation profile for teachmall-message" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -27,10 +27,10 @@
         <module name="teachmall-media-api" />
         <module name="teachmall-content-service" />
         <module name="teachmall-system-api" />
-        <module name="teachmall-message-sdk" />
         <module name="teachmall-system-service" />
         <module name="teachmall-gateway" />
         <module name="teachmall-media-model" />
+        <module name="teachmall-message" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
@@ -38,6 +38,7 @@
       <module name="teachmall-content-model (1)" target="1.8" />
       <module name="teachmall-content-model (2)" target="1.8" />
       <module name="teachmall-generator" target="1.8" />
+      <module name="teachmall-message-sdk" target="1.8" />
       <module name="xuecheng-plus-content" target="1.8" />
       <module name="xuecheng-plus-content-model" target="1.5" />
       <module name="xuecheng-plus-media-api" target="1.5" />
@@ -57,6 +58,7 @@
       <module name="teachmall-media-api" options="-parameters" />
       <module name="teachmall-media-model" options="-parameters" />
       <module name="teachmall-media-service" options="-parameters" />
+      <module name="teachmall-message" options="-parameters" />
       <module name="teachmall-message-sdk" options="-parameters" />
       <module name="teachmall-parent" options="-parameters" />
       <module name="teachmall-system" options="-parameters" />

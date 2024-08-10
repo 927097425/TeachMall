@@ -21,12 +21,14 @@
         <option value="$PROJECT_DIR$/xxl-job-2.3.1/pom.xml" />
         <option value="$PROJECT_DIR$/xuecheng-plus-message-sdk/pom.xml" />
         <option value="$PROJECT_DIR$/teachmall-message-sdk/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-message/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/demo/pom.xml" />
         <option value="$PROJECT_DIR$/teachmall-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-message-sdk/pom.xml" />
       </set>
     </option>
   </component>

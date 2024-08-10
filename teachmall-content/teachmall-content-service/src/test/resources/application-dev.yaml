@@ -1,4 +1,0 @@
-#teachmall:
-#  db:
-#    host: 8.138.159.37
-#    pw: 123 # 修改为docker中的MySQL密码

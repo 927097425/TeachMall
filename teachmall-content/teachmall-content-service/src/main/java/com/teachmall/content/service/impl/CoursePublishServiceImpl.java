@@ -19,6 +19,8 @@ import com.teachmall.content.service.CourseBaseInfoService;
 import com.teachmall.content.service.CoursePublishService;
 import com.teachmall.content.service.TeachPlanService;
 
+import org.springframework.amqp.rabbit.annotation.Exchange;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -42,6 +44,9 @@ public class CoursePublishServiceImpl implements CoursePublishService {
  CoursePublishPreMapper coursePublishPreMapper;
  @Autowired
  CourseMarketMapper courseMarketMapper;
+
+ @Autowired
+ RabbitTemplate rabbitTemplate;
 
 
  @Override
@@ -184,6 +189,8 @@ public class CoursePublishServiceImpl implements CoursePublishService {
 
  private void saveCoursePublishMessage(Long courseId) {
    //使用微服务加mq实现 ToDo
+   String exchange = "coursepub.fanout";
+   rabbitTemplate.convertAndSend(exchange,"",String.valueOf(courseId));
 
   }
 

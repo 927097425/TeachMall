@@ -20,6 +20,9 @@ spring:
           - data-id: freemarker-config-${spring.profiles.active}.yaml
             group: teachmall-project
             refresh: true
+          - data-id: rabbitmq-${spring.profiles.active}.yaml
+            group: teachmall-project
+            refresh: true
 
   profiles:
     active: dev
