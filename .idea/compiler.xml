@@ -12,7 +12,7 @@
         <module name="xxl-job-executor-sample-springboot" />
         <module name="xxl-job-executor-sample-frameless" />
       </profile>
-      <profile name="Annotation profile for teachmall-message" enabled="true">
+      <profile name="Annotation profile for teachmall-auth" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -20,17 +20,18 @@
           <entry name="$PROJECT_DIR$/../../apache-maven-3.6.1-bin/apache-maven-3.6.1/mvn-repo/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
         </processorPath>
         <module name="teachmall-system-model" />
-        <module name="teachmall-content-model" />
-        <module name="teachmall-content-api" />
         <module name="teachmall-media-service" />
         <module name="teachmall-base" />
+        <module name="teachmall-system-api" />
+        <module name="teachmall-message" />
+        <module name="teachmall-content-model" />
+        <module name="teachmall-content-api" />
         <module name="teachmall-media-api" />
         <module name="teachmall-content-service" />
-        <module name="teachmall-system-api" />
         <module name="teachmall-system-service" />
         <module name="teachmall-gateway" />
         <module name="teachmall-media-model" />
-        <module name="teachmall-message" />
+        <module name="teachmall-auth" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
@@ -47,6 +48,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="teachmall-auth" options="-parameters" />
       <module name="teachmall-base" options="-parameters" />
       <module name="teachmall-content" options="-parameters" />
       <module name="teachmall-content-api" options="-parameters" />

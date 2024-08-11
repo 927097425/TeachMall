@@ -20,7 +20,7 @@ org.springframework.beans.factory.BeanDefinitionStoreException: Failed to proces
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
-	at com.xuecheng.MediaApplication.main(MediaApplication.java:12)
+	at com.teachmall.MediaApplication.main(MediaApplication.java:12)
 Caused by: java.io.FileNotFoundException: class path resource [springfox/documentation/swagger2/configuration/Swagger2DocumentationConfiguration.class] cannot be opened because it does not exist
 	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:199)
 	at org.springframework.core.type.classreading.SimpleMetadataReader.getClassReader(SimpleMetadataReader.java:55)
@@ -46,7 +46,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field mediaFileService in com.xuecheng.media.api.MediaFilesController required a bean of type 'com.teachmall.media.service.MediaFileService' that could not be found.
+Field mediaFileService in com.teachmall.media.api.MediaFilesController required a bean of type 'com.teachmall.media.service.MediaFileService' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
@@ -64,7 +64,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field mediaFileService in com.xuecheng.media.api.MediaFilesController required a bean of type 'com.teachmall.media.service.MediaFileService' that could not be found.
+Field mediaFileService in com.teachmall.media.api.MediaFilesController required a bean of type 'com.teachmall.media.service.MediaFileService' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
@@ -82,7 +82,7 @@ APPLICATION FAILED TO START
 
 Description:
 
-Field mediaFileService in com.xuecheng.media.api.MediaFilesController required a bean of type 'com.teachmall.media.service.MediaFileService' that could not be found.
+Field mediaFileService in com.teachmall.media.api.MediaFilesController required a bean of type 'com.teachmall.media.service.MediaFileService' that could not be found.
 
 The injection point has the following annotations:
 	- @org.springframework.beans.factory.annotation.Autowired(required=true)
