@@ -8,12 +8,17 @@ import com.teachmall.content.model.po.CourseBase;
 import com.teachmall.base.model.PageParams;
 import com.teachmall.base.model.PageResult;
 import com.teachmall.content.service.CourseBaseInfoService;
+import com.teachmall.content.util.SecurityUtil;
 import io.swagger.annotations.Api;
 
 import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
+
+import java.io.Serializable;
 
 @Api(tags = "课程相关接口")
 @RestController
@@ -21,6 +26,7 @@ import org.springframework.web.bind.annotation.*;
 public class CourseBaseInfoController {
     private final CourseBaseInfoService courseBaseInfoService;
     @ApiOperation("查询课程列表")
+    @PreAuthorize("hasAuthority('xc_teachmanager_course_list')")
     @PostMapping("/course/list")
     public PageResult<CourseBase> list(PageParams pageParams, @RequestBody(required = false) QueryCourseParamsDto queryCourseParamsDto){
         PageResult<CourseBase> courseBasePageResult = courseBaseInfoService.queryCourseBaseList(pageParams,queryCourseParamsDto);
@@ -37,6 +43,8 @@ public class CourseBaseInfoController {
     @ApiOperation("根据课程id查询课程基础信息")
     @GetMapping("/course/{courseId}")
     public CourseBaseInfoDto getCourseBaseById(@PathVariable Long courseId){
+//        SecurityUtil.XcUser user = SecurityUtil.getUser();
+//        System.out.println(user);
         return courseBaseInfoService.getCourseBaseInfo(courseId);
     }
     @ApiOperation("修改课程基础信息")

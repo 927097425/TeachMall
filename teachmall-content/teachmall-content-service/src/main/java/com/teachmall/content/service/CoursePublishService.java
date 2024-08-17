@@ -1,6 +1,7 @@
 package com.teachmall.content.service;
 
 import com.teachmall.content.model.dto.CoursePreviewDto;
+import com.teachmall.content.model.po.CoursePublish;
 
 public interface CoursePublishService {
 
@@ -11,4 +12,5 @@ public interface CoursePublishService {
 
    public void publish(Long companyId,Long courseId);
 
+    CoursePublish getCoursePublish(Long courseId);
 }

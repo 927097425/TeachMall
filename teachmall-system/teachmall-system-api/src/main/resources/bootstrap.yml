@@ -17,9 +17,13 @@ spring:
         group: teachmall-project
         file-extension: yaml
         refresh-enabled: true
+        extension-configs:
+          - data-id: system-service-${spring.profiles.active}.yaml
+            group: teachmall-project
+            refresh: true
         shared-configs:
           - data-id: database-${spring.profiles.active}.yaml
-            group: database-commom
+            group: commom
             refresh: true
   profiles:
     active: dev

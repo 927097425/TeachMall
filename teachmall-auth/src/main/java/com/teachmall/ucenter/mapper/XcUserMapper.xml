@@ -28,5 +28,11 @@
     <sql id="Base_Column_List">
         id, username, password, salt, name,nickname,company_id, wx_unionid,userpic, utype, birthday, sex, email, cellphone, qq, status, create_time, update_time
     </sql>
+    <update id="updateByPhone">
+        update teachmall_user.xc_user set password = #{password} where cellphone = #{cellphone};
+    </update>
+    <update id="updateByEmail">
+        update teachmall_user.xc_user set password = #{password} where email = #{email};
+    </update>
 
 </mapper>

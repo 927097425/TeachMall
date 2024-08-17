@@ -12,12 +12,7 @@ spring:
         group: teachmall-project
         file-extension: yaml
         refresh-enabled: true
-  rabbitmq:
-    host: 8.138.159.37 # 你的虚拟机IP
-    port: 5672 # 端口
-    virtual-host: /teachmall # 虚拟主机
-    username: teachmall # 用户名
-    password: 123 # 密码
+
   #profiles默认为dev
   profiles:
     active: dev

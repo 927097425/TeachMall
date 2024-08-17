@@ -1,6 +1,7 @@
 package com.teachmall.content.api;
 
 import com.teachmall.content.model.dto.CoursePreviewDto;
+import com.teachmall.content.model.po.CoursePublish;
 import com.teachmall.content.service.CoursePublishService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,15 @@ public class CoursePublishController {
      modelAndView.setViewName("course_template");
      return modelAndView;
   }
+//    @GetMapping("/testfreemarker")
+//    public ModelAndView test(){
+//        ModelAndView modelAndView = new ModelAndView();
+//        //设置模型数据
+//        modelAndView.addObject("name","小明");
+//        //设置模板名称
+//        modelAndView.setViewName("test");
+//        return modelAndView;
+//    }
     @ResponseBody
     @PostMapping("/courseaudit/commit/{courseId}")
     public void commitAudit(@PathVariable("courseId") Long courseId){
@@ -32,7 +42,13 @@ public class CoursePublishController {
         coursePublishService.commitAudit(companyId,courseId);
 
     }
-
+    @ApiOperation("查询课程发布信息")
+    @ResponseBody
+    @GetMapping("/r/coursepublish/{courseId}")
+    public CoursePublish getCoursepublish(@PathVariable("courseId") Long courseId) {
+        CoursePublish coursePublish = coursePublishService.getCoursePublish(courseId);
+        return coursePublish;
+    }
     @ApiOperation("课程发布")
     @ResponseBody
     @PostMapping ("/coursepublish/{courseId}")

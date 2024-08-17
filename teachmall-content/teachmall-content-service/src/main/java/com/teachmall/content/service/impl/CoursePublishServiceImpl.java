@@ -193,5 +193,10 @@ public class CoursePublishServiceImpl implements CoursePublishService {
    rabbitTemplate.convertAndSend(exchange,"",String.valueOf(courseId));
 
   }
+@Override
+ public CoursePublish getCoursePublish(Long courseId){
+  CoursePublish coursePublish = coursePublishMapper.selectById(courseId);
+  return coursePublish ;
+ }
 
 }

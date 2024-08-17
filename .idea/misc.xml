@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
@@ -24,6 +23,16 @@
         <option value="$PROJECT_DIR$/teachmall-message/pom.xml" />
         <option value="$PROJECT_DIR$/xuecheng-plus-auth/pom.xml" />
         <option value="$PROJECT_DIR$/teachmall-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-checkcode/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-checkcode/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-learning/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-learning/teachmall-learning-api/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-search/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-orders/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-orders/xuecheng-plus-orders-model/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-orders/xuecheng-plus-orders-service/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-orders/teachmall-orders-api/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-orders/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

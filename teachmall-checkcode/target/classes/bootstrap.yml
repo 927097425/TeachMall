@@ -1,0 +1,40 @@
+spring:
+  application:
+    name: checkcode
+  cloud:
+    nacos:
+      server-addr: 8.138.159.37:8848
+      discovery:
+        namespace: dev
+        group: teachmall-project
+      config:
+        namespace: dev
+        group: teachmall-project
+        file-extension: yaml
+        refresh-enabled: true
+        shared-configs:
+          - data-id: database-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+          - data-id: redis-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+
+  profiles:
+    active: dev
+
+#spring:
+#  redis:
+#    host: 192.168.101.65
+#    port: 6379
+#    password: redis
+#    database: 0
+#    lettuce:
+#      pool:
+#        max-active: 20
+#        max-idle: 10
+#        min-idle: 0
+#    timeout: 10000
+#      #redisson:
+#      #配置文件目录
+#    #config: classpath:singleServerConfig.yaml

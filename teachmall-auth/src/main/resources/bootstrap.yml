@@ -14,9 +14,22 @@ spring:
         refresh-enabled: true
         shared-configs:
           - data-id: database-${spring.profiles.active}.yaml
-            group: database-commom
+            group: commom
             refresh: true
+          - data-id: feign-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+          - data-id: wx-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+          - data-id: redis-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+
 
 
   profiles:
     active: dev
+#weixin:
+#  appid: wxed9954c01bb89b47
+#  secret: a7482517235173ddb4083788de60b90e

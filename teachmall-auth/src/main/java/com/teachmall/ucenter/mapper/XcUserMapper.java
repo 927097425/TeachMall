@@ -1,6 +1,7 @@
 package com.teachmall.ucenter.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.teachmall.ucenter.model.dto.FindPasswordDto;
 import com.teachmall.ucenter.model.po.XcUser;
 
 /**
@@ -12,4 +13,7 @@ import com.teachmall.ucenter.model.po.XcUser;
  */
 public interface XcUserMapper extends BaseMapper<XcUser> {
 
+    void updateByPhone(FindPasswordDto findPasswordDto);
+
+    void updateByEmail(FindPasswordDto findPasswordDto);
 }
