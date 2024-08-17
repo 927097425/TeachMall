@@ -30,3 +30,6 @@ spring:
 
   profiles:
     active: dev
+#weixin:
+#  appid: wxed9954c01bb89b47
+#  secret: a7482517235173ddb4083788de60b90e

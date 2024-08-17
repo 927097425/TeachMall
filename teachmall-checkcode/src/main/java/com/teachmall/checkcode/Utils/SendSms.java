@@ -20,12 +20,15 @@ public class SendSms {
 
 
     private AsyncClient client;
-
+    @Value("pay.accessKeyId")
+    String asscessKeyId;
+    @Value("pay.accessKeySecret")
+    String asscessKeySecret;
     public SendSms() {
         // Configure Credentials authentication information, including ak, secret, token
         StaticCredentialProvider provider = StaticCredentialProvider.create(Credential.builder()
-                .accessKeyId("LTAI5tREnrPXNjHfw8g4d3HR")
-                .accessKeySecret("qZ6Fx8NjZF3cFDUF02ykUMA4VyBLxv")
+                .accessKeyId(asscessKeyId)
+                .accessKeySecret(asscessKeySecret)
                 .build());
 
         // Configure the Client
