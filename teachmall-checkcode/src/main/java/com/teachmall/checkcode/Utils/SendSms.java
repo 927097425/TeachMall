@@ -7,28 +7,24 @@ import com.aliyun.sdk.service.dysmsapi20170525.models.*;
 import com.aliyun.sdk.service.dysmsapi20170525.AsyncClient;
 import com.google.gson.Gson;
 import com.teachmall.checkcode.model.CheckCodeDto;
-import com.teachmall.checkcode.service.CheckCodeService;
-import com.teachmall.checkcode.service.impl.NumberLetterCheckCodeGenerator;
 import darabonba.core.client.ClientOverrideConfiguration;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-import javax.annotation.Resource;
 import java.util.concurrent.CompletableFuture;
-
+@Service
 public class SendSms {
 
 
+
     private AsyncClient client;
-    @Value("pay.accessKeyId")
-    String asscessKeyId;
-    @Value("pay.accessKeySecret")
-    String asscessKeySecret;
-    public SendSms() {
+
+    public SendSms(@Value("${check.code.ACCESS_KEY_ID}") String ACCESS_KEY_ID,  @Value("${check.code.ACCESS_KEY_SECRET}") String ACCESS_KEY_SECRET) {
         // Configure Credentials authentication information, including ak, secret, token
         StaticCredentialProvider provider = StaticCredentialProvider.create(Credential.builder()
-                .accessKeyId(asscessKeyId)
-                .accessKeySecret(asscessKeySecret)
+                .accessKeyId(ACCESS_KEY_ID)
+                .accessKeySecret(ACCESS_KEY_SECRET)
                 .build());
 
         // Configure the Client

@@ -5,6 +5,7 @@ import com.teachmall.checkcode.model.CheckCodeDto;
 import com.teachmall.checkcode.service.CheckCodeService;
 import com.teachmall.checkcode.service.SentLetterService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -17,11 +18,13 @@ import javax.annotation.Resource;
 
 @Service
 public class SentLetterServiceImpl implements SentLetterService {
+
     @Resource(name ="NumberLetterCheckCodeGenerator")
     CheckCodeService.CheckCodeGenerator checkCodeGenerator;
     @Resource(name = "RedisCheckCodeStore")
     CheckCodeService.CheckCodeStore checkCodeStore;
-    SendSms sendSms = new SendSms();
+    @Autowired
+    SendSms sendSms;
     @Override
     public void sent(String phoneNumber) throws Exception {
         CheckCodeDto checkCodeDto = new CheckCodeDto(checkCodeGenerator.generate(6));
