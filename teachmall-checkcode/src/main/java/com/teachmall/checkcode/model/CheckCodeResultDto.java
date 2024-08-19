@@ -3,10 +3,7 @@ package com.teachmall.checkcode.model;
 import lombok.Data;
 
 /**
- * @author Mr.M
- * @version 1.0
  * @description 验证码生成结果类
- * @date 2022/9/29 15:48
  */
 @Data
 public class CheckCodeResultDto {

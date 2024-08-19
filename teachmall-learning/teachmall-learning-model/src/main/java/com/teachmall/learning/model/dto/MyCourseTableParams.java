@@ -3,12 +3,7 @@ package com.teachmall.learning.model.dto;
 import lombok.Data;
 import lombok.ToString;
 
-/**
- * @description 我的课程查询条件
- * @author Mr.M
- * @date 2022/10/6 9:42
- * @version 1.0
- */
+
  @Data
  @ToString
 public class MyCourseTableParams {

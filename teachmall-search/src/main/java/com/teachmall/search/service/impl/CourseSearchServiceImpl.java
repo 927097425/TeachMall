@@ -14,12 +14,7 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * @author Mr.M
- * @version 1.0
- * @description 课程搜索service实现类
- * @date 2022/9/24 22:48
- */
+
 @Slf4j
 @Service
 public class CourseSearchServiceImpl implements CourseSearchService {
