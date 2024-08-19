@@ -1,7 +1,8 @@
 package com.teachmall.orders.config;
 
 import com.alibaba.fastjson.JSON;
-
+import com.teachmall.messagesdk.model.po.MqMessage;
+import com.teachmall.messagesdk.service.MqMessageService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.*;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -12,12 +13,6 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @author Mr.M
- * @version 1.0
- * @description TODO
- * @date 2023/2/23 16:59
- */
 @Slf4j
 @Configuration
 public class PayNotifyConfig implements ApplicationContextAware {
@@ -52,16 +47,16 @@ public class PayNotifyConfig implements ApplicationContextAware {
         // 获取RabbitTemplate
         RabbitTemplate rabbitTemplate = applicationContext.getBean(RabbitTemplate.class);
         //消息处理service
-//        MqMessageService mqMessageService = applicationContext.getBean(MqMessageService.class);
-//        // 设置ReturnCallback
-//        rabbitTemplate.setReturnCallback((message, replyCode, replyText, exchange, routingKey) -> {
-//            // 投递失败，记录日志
-//            log.info("消息发送失败，应答码{}，原因{}，交换机{}，路由键{},消息{}",
-//                    replyCode, replyText, exchange, routingKey, message.toString());
-//            MqMessage mqMessage = JSON.parseObject(message.toString(), MqMessage.class);
-//            //将消息再添加到消息表
-//            mqMessageService.addMessage(mqMessage.getMessageType(),mqMessage.getBusinessKey1(),mqMessage.getBusinessKey2(),mqMessage.getBusinessKey3());
-//
-//        });
+        MqMessageService mqMessageService = applicationContext.getBean(MqMessageService.class);
+        // 设置ReturnCallback
+        rabbitTemplate.setReturnCallback((message, replyCode, replyText, exchange, routingKey) -> {
+            // 投递失败，记录日志
+            log.info("消息发送失败，应答码{}，原因{}，交换机{}，路由键{},消息{}",
+                    replyCode, replyText, exchange, routingKey, message.toString());
+            MqMessage mqMessage = JSON.parseObject(message.toString(), MqMessage.class);
+            //将消息再添加到消息表
+            mqMessageService.addMessage(mqMessage.getMessageType(),mqMessage.getBusinessKey1(),mqMessage.getBusinessKey2(),mqMessage.getBusinessKey3());
+
+        });
     }
 }

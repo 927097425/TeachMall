@@ -11,9 +11,9 @@ package com.teachmall.orders.config;
   // 私钥 pkcs8格式的
 //	public static String RSA_PRIVATE_KEY = "";
   // 服务器异步通知页面路径 需http://或者https://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
-  public static String notify_url = "http://6451e38f.r16.cpolar.top/orders/";
+  public static String notify_url = "https://1275f7ea.r16.cpolar.top/orders/";
   // 页面跳转同步通知页面路径 需http://或者https://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问 商户可以自定义同步跳转地址
-  public static String return_url = "http://6451e38f.r16.cpolar.top/orders/";
+  public static String return_url = "https://1275f7ea.r16.cpolar.top/orders/";
   // 请求网关地址
   public static String URL = "https://openapi-sandbox.dl.alipaydev.com/gateway.do";
   // 编码

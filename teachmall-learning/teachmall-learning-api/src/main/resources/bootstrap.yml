@@ -25,6 +25,10 @@ spring:
           - data-id: database-${spring.profiles.active}.yaml
             group: commom
             refresh: true
+          - data-id: rabbitmq-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+
 
   profiles:
     active: dev

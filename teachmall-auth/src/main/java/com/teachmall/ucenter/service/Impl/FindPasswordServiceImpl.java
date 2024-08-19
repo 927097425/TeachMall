@@ -19,7 +19,7 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-public class FindPasswordServiceImpl implements FindPasswordService {
+public class FindPasswordServiceImpl implements FindPasswordService{
     @Autowired
     CheckCodeService.CheckCodeStore checkCodeStore;
     @Autowired

@@ -14,7 +14,7 @@ import org.springframework.context.annotation.Configuration;
  * </p>
  */
 @Configuration("messagesdk_mpconfig")
-@MapperScan("com.xuecheng.messagesdk.mapper")
+@MapperScan("com.teachmall.messagesdk.mapper")
 public class MybatisPlusConfig {
 
 

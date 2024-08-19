@@ -9,7 +9,10 @@ import com.alipay.api.request.AlipayTradeQueryRequest;
 import com.alipay.api.response.AlipayTradeQueryResponse;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.teachmall.base.exception.TeachmallException;
+import com.teachmall.messagesdk.model.po.MqMessage;
+import com.teachmall.messagesdk.service.MqMessageService;
 import com.teachmall.orders.config.AlipayConfig;
+import com.teachmall.orders.config.PayNotifyConfig;
 import com.teachmall.orders.mapper.XcOrdersGoodsMapper;
 import com.teachmall.orders.mapper.XcOrdersMapper;
 import com.teachmall.orders.mapper.XcPayRecordMapper;
@@ -23,6 +26,11 @@ import com.teachmall.orders.service.OrderService;
 import com.teachmall.orders.utils.IdWorkerUtils;
 import com.teachmall.orders.utils.QRCodeUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.amqp.core.Message;
+import org.springframework.amqp.core.MessageBuilder;
+import org.springframework.amqp.core.MessageDeliveryMode;
+import org.springframework.amqp.rabbit.connection.CorrelationData;
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -31,6 +39,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Map;
@@ -47,7 +56,8 @@ public class OrderServiceImpl implements OrderService {
     XcOrdersMapper ordersMapper;
     @Autowired
     XcOrdersGoodsMapper ordersGoodsMapper;
-
+    @Autowired
+    RabbitTemplate rabbitTemplate;
     @Autowired
     XcPayRecordMapper payRecordMapper;
     @Value("${pay.alipay.APP_ID}")
@@ -62,6 +72,8 @@ public class OrderServiceImpl implements OrderService {
     @Lazy
     @Autowired
     OrderServiceImpl currentProxy;
+    @Autowired
+    MqMessageService mqMessageService;
     @Transactional
     @Override
     public PayRecordDto createOrder(String userId, AddOrderDto addOrderDto) {
@@ -216,11 +228,44 @@ public class OrderServiceImpl implements OrderService {
                 log.info("更新订单表状态失败,订单号:{}", orderId);
                 TeachmallException.cast("更新订单表状态失败");
             }
+            //保存消息记录,参数1：支付结果通知类型，2: 业务id，3:业务类型
+            MqMessage mqMessage = mqMessageService.addMessage("payresult.notify", orders.getOutBusinessId(), orders.getOrderType(), null);
+            //通知消息
+            notifyPayResult(mqMessage);
         }
 
     }
 
+    @Override
+    public void notifyPayResult(MqMessage message) {
 
+        //1、消息体，转json
+        String msg = JSON.toJSONString(message);
+        //设置消息持久化
+        Message msgObj = MessageBuilder.withBody(msg.getBytes(StandardCharsets.UTF_8))
+                .setDeliveryMode(MessageDeliveryMode.PERSISTENT)
+                .build();
+        // 2.全局唯一的消息ID，需要封装到CorrelationData中
+        CorrelationData correlationData = new CorrelationData(message.getId().toString());
+        // 3.添加callback
+        correlationData.getFuture().addCallback(
+                result -> {
+                    if(result.isAck()){
+                        // 3.1.ack，消息成功
+                        log.debug("通知支付结果消息发送成功, ID:{}", correlationData.getId());
+                        //删除消息表中的记录
+                        mqMessageService.completed(message.getId());
+                    }else{
+                        // 3.2.nack，消息失败
+                        log.error("通知支付结果消息发送失败, ID:{}, 原因{}",correlationData.getId(), result.getReason());
+                    }
+                },
+                ex -> log.error("消息发送异常, ID:{}, 原因{}",correlationData.getId(),ex.getMessage())
+        );
+        // 发送消息
+        rabbitTemplate.convertAndSend(PayNotifyConfig.PAYNOTIFY_EXCHANGE_FANOUT, "", msgObj,correlationData);
+
+    }
 
 
     public XcOrders saveXcOrders(String userId, AddOrderDto addOrderDto){

@@ -1,7 +1,10 @@
 package com.teachmall.learning.service;
 
+import com.teachmall.base.model.PageResult;
+import com.teachmall.learning.model.dto.MyCourseTableParams;
 import com.teachmall.learning.model.dto.XcChooseCourseDto;
 import com.teachmall.learning.model.dto.XcCourseTablesDto;
+import com.teachmall.learning.model.po.XcCourseTables;
 
 public interface MyCourseTablesService {
 
@@ -12,5 +15,6 @@ public interface MyCourseTablesService {
 */
  public XcChooseCourseDto addChooseCourse(String userId, Long courseId);
  public XcCourseTablesDto getLearningStatus(String userId, Long courseId);
-
+ public boolean saveChooseCourseSuccess(String chooseCourseId);
+ public PageResult<XcCourseTables> mycoursetables(MyCourseTableParams params);
 }

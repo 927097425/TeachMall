@@ -8,9 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="xxl-job-core" />
-        <module name="xxl-job-executor-sample-frameless" />
         <module name="xxl-job-admin" />
         <module name="xxl-job-executor-sample-springboot" />
+        <module name="xxl-job-executor-sample-frameless" />
       </profile>
       <profile name="Annotation profile for teachmall-orders" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -27,10 +27,11 @@
         <module name="teachmall-base" />
         <module name="teachmall-learning-model" />
         <module name="teachmall-system-api" />
+        <module name="teachmall-message-sdk" />
         <module name="teachmall-orders-model" />
         <module name="teachmall-orders-service" />
-        <module name="teachmall-message" />
         <module name="teachmall-orders-api" />
+        <module name="teachmall-message" />
         <module name="teachmall-checkcode" />
         <module name="teachmall-content-model" />
         <module name="teachmall-content-api" />
@@ -47,7 +48,6 @@
       <module name="teachmall-content-model (1)" target="1.8" />
       <module name="teachmall-content-model (2)" target="1.8" />
       <module name="teachmall-generator" target="1.8" />
-      <module name="teachmall-message-sdk" target="1.8" />
       <module name="xuecheng-plus-content" target="1.8" />
       <module name="xuecheng-plus-content-model" target="1.5" />
       <module name="xuecheng-plus-learning-api" target="1.5" />

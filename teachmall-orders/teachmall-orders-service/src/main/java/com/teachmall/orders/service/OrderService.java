@@ -1,5 +1,6 @@
 package com.teachmall.orders.service;
 
+import com.teachmall.messagesdk.model.po.MqMessage;
 import com.teachmall.orders.model.dto.AddOrderDto;
 import com.teachmall.orders.model.dto.PayRecordDto;
 import com.teachmall.orders.model.dto.PayStatusDto;
@@ -20,4 +21,6 @@ public interface OrderService {
      */
     public PayRecordDto queryPayResult(String payNo);
     public void saveAliPayStatus(PayStatusDto payStatusDto) ;
+
+    public void notifyPayResult(MqMessage message);
 }
