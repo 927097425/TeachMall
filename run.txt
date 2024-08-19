@@ -1,0 +1,23 @@
+//新开窗口
+start cmd /c java -Dfile.encoding=utf-8 -jar .\jar\teachmall-auth.jar
+start cmd /c java -Dfile.encoding=utf-8 -jar .\jar\teachmall-checkcode.jar 
+start cmd /c java -Dfile.encoding=utf-8 -jar .\jar\teachmall-gateway.jar 
+start cmd /c java -Dfile.encoding=utf-8 -jar .\jar\teachmall-search.jar 
+start cmd /c java -Dfile.encoding=utf-8 -jar .\jar\teachmall-content.jar 
+start cmd /c java -Dfile.encoding=utf-8 -jar .\jar\teachmall-learning.jar 
+start cmd /c java -Dfile.encoding=utf-8 -jar .\jar\teachmall-media.jar 
+start cmd /c java -Dfile.encoding=utf-8 -jar .\jar\teachmall-orders.jar 
+start cmd /c java -Dfile.encoding=utf-8 -jar .\jar\teachmall-system.jar 
+start cmd /c java -Dfile.encoding=utf-8 -jar .\jar\xxl-job-admin-2.3.1.jar 
+
+//后台运行
+start /b java -Dfile.encoding=utf-8 -jar .\jar\teachmall-auth.jar
+start /b java -Dfile.encoding=utf-8 -jar .\jar\teachmall-checkcode.jar 
+start /b java -Dfile.encoding=utf-8 -jar .\jar\teachmall-gateway.jar 
+start /b java -Dfile.encoding=utf-8 -jar .\jar\teachmall-search.jar 
+start /b java -Dfile.encoding=utf-8 -jar .\jar\teachmall-content.jar 
+start /b java -Dfile.encoding=utf-8 -jar .\jar\teachmall-learning.jar 
+start /b java -Dfile.encoding=utf-8 -jar .\jar\teachmall-media.jar 
+start /b java -Dfile.encoding=utf-8 -jar .\jar\teachmall-orders.jar 
+start /b java -Dfile.encoding=utf-8 -jar .\jar\teachmall-system.jar 
+start /b java -Dfile.encoding=utf-8 -jar .\jar\xxl-job-admin-2.3.1.jar
