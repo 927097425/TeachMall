@@ -44,7 +44,20 @@
         <security-oauth2.version>2.5.1.RELEASE</security-oauth2.version>
         <spring-cloud-starter-security.version></spring-cloud-starter-security.version>
     </properties>
-
+    <modules>
+        <module>../teachmall-base</module>
+        <module>../teachmall-checkcode</module>
+        <module>../teachmall-gateway</module>
+        <module>../teachmall-auth</module>
+        <module>../teachmall-content</module>
+        <module>../teachmall-learning</module>
+        <module>../teachmall-media</module>
+        <module>../teachmall-orders</module>
+        <module>../teachmall-message-sdk</module>
+        <module>../teachmall-search</module>
+        <module>../teachmall-system</module>
+        <module>../xxl-job-2.3.1</module>
+    </modules>
 
     <dependencyManagement>
         <dependencies>
@@ -165,12 +178,12 @@
                 <version>${mybatis-plus-boot-starter.version}</version>
             </dependency>
 
-            <!-- mybatis plus 代码生成器 -->
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-generator</artifactId>
-                <version>${mybatis-plus-boot-starter.version}</version>
-            </dependency>
+<!--            &lt;!&ndash; mybatis plus 代码生成器 &ndash;&gt;-->
+<!--            <dependency>-->
+<!--                <groupId>com.baomidou</groupId>-->
+<!--                <artifactId>mybatis-plus-generator</artifactId>-->
+<!--                <version>${mybatis-plus-boot-starter.version}</version>-->
+<!--            </dependency>-->
 
 
             <!-- 工具类管理 -->
@@ -265,9 +278,9 @@
                 <version>3.8.1</version>
                 <configuration>
                     <!--指定项目源码jdk的版本-->
-                    <source>1.8</source>
+                    <source>11</source>
                     <!--指定项目编译后的jdk的版本-->
-                    <target>1.8</target>
+                    <target>11</target>
                     <!--配置注解预编译-->
                     <annotationProcessorPaths>
                         <path>

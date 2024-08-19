@@ -18,4 +18,5 @@
         <module>teachmall-content-model</module>
         <module>teachmall-content-service</module>
     </modules>
+
 </project>
