@@ -1,0 +1,82 @@
+#微服务配置
+spring:
+  application:
+    name: content-api
+  cloud:
+    nacos:
+      server-addr: 8.138.159.37:8848
+      discovery:
+        namespace: dev
+        group: teachmall-project
+      config:
+        namespace: dev
+        group: teachmall-project
+        file-extension: yaml
+        refresh-enabled: true
+        shared-configs:
+          - data-id: database-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+          - data-id: freemarker-config-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+          - data-id: rabbitmq-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+
+#  rabbitmq:
+#    host: 8.138.159.37 # 你的虚拟机IP
+#    port: 5672 # 端口
+#    virtual-host: /teachmall # 虚拟主机
+#    username: teachmall # 用户名
+#    password: 123 # 密码
+#  freemarker:
+#    enabled: true
+#    cache: false   #关闭模板缓存，方便测试
+#    settings:
+#      template_update_delay: 0
+#    suffix: .ftl   #页面模板后缀名
+#    charset: UTF-8
+#    template-loader-path: classpath:/templates/   #页面模板位置(默认为 classpath:/templates/)
+#    resources:
+#      add-mappings: false   #关闭项目中的静态资源映射(static、resources文件夹下的资源)
+
+
+  profiles:
+    active: dev
+
+
+#老配置
+#server:
+#  port: 63040
+#  servlet:
+#    context-path: /content
+
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    url: jdbc:mysql://${teachmall.db.host}/teachmall_content?serverTimezone=UTC&userUnicode=true&useSSL=false&
+#    username: root
+#    password: ${teachmall.db.pw}
+#knife4j:
+#  enable: true
+#  openapi:
+#    title: 教育商城内容模块接口文档
+#    description: "教育商城内容模块接口文档"
+#    email: 927097425@qq.com
+#    concat: 陈靖国
+#    version: v1.0.0
+#    group:
+#      default:
+#        group-name: default
+#        api-rule: package
+#        api-rule-resources:
+#          - com.teachmall.content.api
+#
+## 日志文件配置路径
+#logging:
+#  config: classpath:log4j2-dev.xml
+
+#teachmall:
+#  db:
+#    host: 8.138.159.37
+#    pw: 123 # 修改为docker中的MySQL密码

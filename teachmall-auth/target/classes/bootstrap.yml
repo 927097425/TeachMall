@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: auth-service
+  cloud:
+    nacos:
+      server-addr: 8.138.159.37:8848
+      discovery:
+        namespace: dev
+        group: teachmall-project
+      config:
+        namespace: dev
+        group: teachmall-project
+        file-extension: yaml
+        refresh-enabled: true
+        shared-configs:
+          - data-id: database-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+          - data-id: feign-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+          - data-id: wx-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+          - data-id: redis-${spring.profiles.active}.yaml
+            group: commom
+            refresh: true
+
+
+
+  profiles:
+    active: dev
+#weixin:
+#  appid: wxed9954c01bb89b47
+#  secret: a7482517235173ddb4083788de60b90e

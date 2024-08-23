@@ -1,9 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="MavenRunner">
-    <option name="jreName" value="17" />
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/teachmall-parent" />
   </component>
-  <component name="ProjectRootManager">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/teachmall-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-base/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-content/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-system/xuecheng-plus-system-service/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-system/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-system/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-media/pom.xml" />
+        <option value="$PROJECT_DIR$/xxl-job-2.3.1/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-message-sdk/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-message/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-checkcode/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-checkcode/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-learning/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-learning/teachmall-learning-api/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-search/pom.xml" />
+        <option value="$PROJECT_DIR$/xuecheng-plus-orders/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-orders/xuecheng-plus-orders-model/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-orders/xuecheng-plus-orders-service/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-orders/teachmall-orders-api/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-orders/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-message-sdk/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/demo/pom.xml" />
+        <option value="$PROJECT_DIR$/teachmall-generator/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

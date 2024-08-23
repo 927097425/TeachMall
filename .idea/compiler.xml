@@ -1,6 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <bytecodeTargetLevel target="17" />
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xxl-job-core" />
+        <module name="xxl-job-admin" />
+        <module name="xxl-job-executor-sample-springboot" />
+        <module name="xxl-job-executor-sample-frameless" />
+      </profile>
+      <profile name="Annotation profile for teachmall-parent" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../apache-maven-3.6.1-bin/apache-maven-3.6.1/mvn-repo/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+        </processorPath>
+        <module name="teachmall-system-model" />
+        <module name="teachmall-learning-service" />
+        <module name="teachmall-search" />
+        <module name="teachmall-learning-api" />
+        <module name="teachmall-media-service" />
+        <module name="teachmall-base" />
+        <module name="teachmall-learning-model" />
+        <module name="teachmall-message-sdk" />
+        <module name="teachmall-system-api" />
+        <module name="teachmall-orders-model" />
+        <module name="teachmall-orders-service" />
+        <module name="teachmall-message" />
+        <module name="teachmall-orders-api" />
+        <module name="teachmall-checkcode" />
+        <module name="teachmall-content-model" />
+        <module name="teachmall-content-api" />
+        <module name="teachmall-media-api" />
+        <module name="teachmall-content-service" />
+        <module name="teachmall-system-service" />
+        <module name="teachmall-media-model" />
+        <module name="teachmall-gateway" />
+        <module name="teachmall-auth" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="17">
+      <module name="demo" target="1.8" />
+      <module name="teachmall-content-model (1)" target="1.8" />
+      <module name="teachmall-content-model (2)" target="1.8" />
+      <module name="teachmall-generator" target="1.8" />
+      <module name="xuecheng-plus-content" target="1.8" />
+      <module name="xuecheng-plus-content-model" target="1.5" />
+      <module name="xuecheng-plus-learning-api" target="1.5" />
+      <module name="xuecheng-plus-media-api" target="1.5" />
+      <module name="xuecheng-plus-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="teachmall-auth" options="-parameters" />
+      <module name="teachmall-base" options="-parameters" />
+      <module name="teachmall-checkcode" options="-parameters" />
+      <module name="teachmall-content" options="-parameters" />
+      <module name="teachmall-content-api" options="-parameters" />
+      <module name="teachmall-content-model" options="-parameters" />
+      <module name="teachmall-content-service" options="-parameters" />
+      <module name="teachmall-gateway" options="-parameters" />
+      <module name="teachmall-generator" options="-parameters" />
+      <module name="teachmall-learning" options="-parameters" />
+      <module name="teachmall-learning-api" options="-parameters" />
+      <module name="teachmall-learning-model" options="-parameters" />
+      <module name="teachmall-learning-service" options="-parameters" />
+      <module name="teachmall-media" options="-parameters" />
+      <module name="teachmall-media-api" options="-parameters" />
+      <module name="teachmall-media-model" options="-parameters" />
+      <module name="teachmall-media-service" options="-parameters" />
+      <module name="teachmall-message" options="-parameters" />
+      <module name="teachmall-message-sdk" options="-parameters" />
+      <module name="teachmall-orders" options="-parameters" />
+      <module name="teachmall-orders-api" options="-parameters" />
+      <module name="teachmall-orders-model" options="-parameters" />
+      <module name="teachmall-orders-service" options="-parameters" />
+      <module name="teachmall-parent" options="-parameters" />
+      <module name="teachmall-search" options="-parameters" />
+      <module name="teachmall-system" options="-parameters" />
+      <module name="teachmall-system-api" options="-parameters" />
+      <module name="teachmall-system-model" options="-parameters" />
+      <module name="teachmall-system-service" options="-parameters" />
+    </option>
   </component>
 </project>
