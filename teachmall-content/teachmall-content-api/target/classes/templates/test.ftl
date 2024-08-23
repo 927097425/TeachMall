@@ -5,6 +5,6 @@
     <title>Hello World!</title>
 </head>
 <body>
-Hello teachmall-content-api!
+Hello ${name}!
 </body>
 </html>

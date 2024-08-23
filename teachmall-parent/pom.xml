@@ -42,7 +42,8 @@
         <knife.version>4.1.0</knife.version>
         <security.version>5.8.0</security.version>
         <security-oauth2.version>2.5.1.RELEASE</security-oauth2.version>
-        <spring-cloud-starter-security.version></spring-cloud-starter-security.version>
+        <spring-profile-used>dev</spring-profile-used>
+        <nacos-addr>8.138.159.37</nacos-addr>
     </properties>
     <modules>
         <module>../teachmall-base</module>

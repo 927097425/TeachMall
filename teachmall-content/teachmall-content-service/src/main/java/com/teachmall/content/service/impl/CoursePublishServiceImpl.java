@@ -19,17 +19,25 @@ import com.teachmall.content.service.CourseBaseInfoService;
 import com.teachmall.content.service.CoursePublishService;
 import com.teachmall.content.service.TeachPlanService;
 
+import lombok.extern.slf4j.Slf4j;
+import org.redisson.Redisson;
+import org.redisson.api.RLock;
+import org.redisson.api.RedissonClient;
 import org.springframework.amqp.rabbit.annotation.Exchange;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
+import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 @Service
+@Slf4j
 public class CoursePublishServiceImpl implements CoursePublishService {
 
  @Autowired
@@ -47,7 +55,10 @@ public class CoursePublishServiceImpl implements CoursePublishService {
 
  @Autowired
  RabbitTemplate rabbitTemplate;
-
+ @Autowired
+ RedisTemplate redisTemplate;
+@Autowired
+ RedissonClient redissonClient;
 
  @Override
  public CoursePreviewDto getCoursePreviewInfo(Long courseId) {
@@ -197,6 +208,39 @@ public class CoursePublishServiceImpl implements CoursePublishService {
  public CoursePublish getCoursePublish(Long courseId){
   CoursePublish coursePublish = coursePublishMapper.selectById(courseId);
   return coursePublish ;
+ }
+
+ @Override
+ public CoursePublish getCoursePublishCache(Long courseId) {
+  Object jsonobj = redisTemplate.opsForValue().get(courseId);
+  CoursePublish coursePublish;
+  //设控制解决缓存穿透问题
+  if(jsonobj!=null) {
+   String jsonstring = jsonobj.toString();
+    if (jsonstring.equals("null")) return null;
+    coursePublish = JSON.parseObject(jsonobj.toString(),CoursePublish.class);
+    return coursePublish;
+  }
+  else {
+    RLock lock= redissonClient.getLock("courselock:"+courseId);
+    lock.lock();
+    try {
+      Object  jsonObj = redisTemplate.opsForValue().get(courseId);
+      if(jsonObj!=null){
+       String jsonString = jsonObj.toString();
+       coursePublish = JSON.parseObject(jsonString, CoursePublish.class);
+       return coursePublish;
+      }
+     log.info("get data from mysql database");
+      coursePublish = coursePublishMapper.selectById(courseId);
+     redisTemplate.opsForValue().set(courseId,JSON.toJSONString(coursePublish),30, TimeUnit.SECONDS);
+     return coursePublish;
+    }finally {
+     lock.unlock();
+    }
+  }
+
+
  }
 
 }

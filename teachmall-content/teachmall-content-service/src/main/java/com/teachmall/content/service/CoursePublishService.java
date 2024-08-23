@@ -13,4 +13,5 @@ public interface CoursePublishService {
    public void publish(Long companyId,Long courseId);
 
     CoursePublish getCoursePublish(Long courseId);
+    CoursePublish getCoursePublishCache(Long courseId);
 }

@@ -8,12 +8,12 @@ spring:
     name: system-api
   cloud:
     nacos:
-      server-addr: 8.138.159.37
+      server-addr: ${nacos-addr}:8848
       discovery:
-        namespace: dev
+        namespace: ${spring.profiles.active}
         group: teachmall-project
       config:
-        namespace: dev
+        namespace: ${spring.profiles.active}
         group: teachmall-project
         file-extension: yaml
         refresh-enabled: true
@@ -26,7 +26,7 @@ spring:
             group: commom
             refresh: true
   profiles:
-    active: dev
+    active: ${spring-profile-used}
 #  datasource:
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 #    url: jdbc:mysql://${teachmall.db.host}/teachmall_system?serverTimezone=UTC&userUnicode=true&useSSL=false&

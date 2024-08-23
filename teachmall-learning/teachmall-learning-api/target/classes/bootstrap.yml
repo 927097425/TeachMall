@@ -7,10 +7,10 @@ spring:
     nacos:
       server-addr: 8.138.159.37:8848
       discovery:
-        namespace: dev
+        namespace: ${spring.profiles.active}
         group: teachmall-project
       config:
-        namespace: dev
+        namespace: ${spring.profiles.active}
         group: teachmall-project
         file-extension: yaml
         refresh-enabled: true
