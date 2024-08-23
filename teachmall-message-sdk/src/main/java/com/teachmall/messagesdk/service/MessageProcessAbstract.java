@@ -8,12 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import java.util.List;
 import java.util.concurrent.*;
 
-/**
- * @author Mr.M
- * @version 1.0
- * @description 消息处理抽象类
- * @date 2022/9/21 19:44
- */
+
 @Slf4j
 @Data
 public abstract class MessageProcessAbstract {
@@ -22,27 +17,9 @@ public abstract class MessageProcessAbstract {
     MqMessageService mqMessageService;
 
 
-    /**
-     * @param mqMessage 执行任务内容
-     * @return boolean true:处理成功，false处理失败
-     * @description 任务处理
-     * @author Mr.M
-     * @date 2022/9/21 19:47
-     */
     public abstract boolean execute(MqMessage mqMessage);
 
 
-    /**
-     * @description 扫描消息表多线程执行任务
-     * @param shardIndex 分片序号
-     * @param shardTotal 分片总数
-     * @param messageType  消息类型
-     * @param count  一次取出任务总数
-     * @param timeout 预估任务执行时间,到此时间如果任务还没有结束则强制结束 单位秒
-     * @return void
-     * @author Mr.M
-     * @date 2022/9/21 20:35
-    */
     public void process(int shardIndex, int shardTotal,  String messageType,int count,long timeout) {
 
         try {

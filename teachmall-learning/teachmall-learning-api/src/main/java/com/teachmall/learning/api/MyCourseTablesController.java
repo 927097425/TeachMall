@@ -18,12 +18,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author Mr.M
- * @version 1.0
- * @description 我的课程表接口
- * @date 2022/10/25 9:40
- */
+
 
 @Api(value = "我的课程表接口", tags = "我的课程表接口")
 @Slf4j

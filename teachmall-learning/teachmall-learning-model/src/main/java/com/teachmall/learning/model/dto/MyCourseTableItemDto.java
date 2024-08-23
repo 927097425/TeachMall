@@ -6,12 +6,7 @@ import lombok.ToString;
 
 import java.time.LocalDateTime;
 
-/**
- * @author Mr.M
- * @version 1.0
- * @description 我的课程查询条件
- * @date 2022/10/6 9:42
- */
+
 @Data
 @ToString
 public class MyCourseTableItemDto extends XcCourseTables {

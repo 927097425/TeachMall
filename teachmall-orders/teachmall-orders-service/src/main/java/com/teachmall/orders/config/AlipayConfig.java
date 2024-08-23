@@ -3,12 +3,7 @@ package com.teachmall.orders.config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @description 支付宝配置参数
- * @author Mr.M
- * @date 2022/10/20 22:45
- * @version 1.0
- */
+
  @Configuration
  public class AlipayConfig {
 

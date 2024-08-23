@@ -12,12 +12,7 @@ import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-/**
- * @author Mr.M
- * @version 1.0
- * @description TODO
- * @date 2023/2/23 16:59
- */
+
 @Slf4j
 @Configuration
 public class PayNotifyConfig implements ApplicationContextAware {
