@@ -4,9 +4,12 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.teachmall.base.model.PageParams;
+import com.teachmall.search.dto.CourponResultDto;
 import com.teachmall.search.dto.SearchCourseParamDto;
 import com.teachmall.search.dto.SearchPageResultDto;
+import com.teachmall.search.mapper.CourseCouponMapper;
 import com.teachmall.search.mapper.CoursePublishMapper;
+import com.teachmall.search.po.CourseCoupon;
 import com.teachmall.search.po.CoursePublish;
 import com.teachmall.search.service.CourseSearchService;
 import lombok.extern.slf4j.Slf4j;
@@ -20,7 +23,8 @@ import org.springframework.stereotype.Service;
 public class CourseSearchServiceImpl implements CourseSearchService {
     @Autowired
     CoursePublishMapper coursePublishMapper;
-
+    @Autowired
+    CourseCouponMapper courseCouponMapper;
 
 
 //    PageResult<CourseBase> pageResult = new PageResult<>(selectResult.getRecords(),selectResult.getTotal(),selectResult.getPages(),selectResult.getSize());
@@ -37,6 +41,17 @@ public class CourseSearchServiceImpl implements CourseSearchService {
         Page<CoursePublish> selectResult = coursePublishMapper.selectPage(page,new QueryWrapper<>());
         SearchPageResultDto<CoursePublish> result = new SearchPageResultDto<>(selectResult.getRecords(),selectResult.getTotal(),selectResult.getPages(),selectResult.getSize());
 
+        return result;
+    }
+
+    @Override
+    public CourponResultDto<CourseCoupon>  queryCourseCoupon(PageParams pageParams, SearchCourseParamDto searchCourseParamDto) {
+        LambdaQueryWrapper<CourseCoupon> queryWrapper = new LambdaQueryWrapper<>();
+
+        queryWrapper.eq(CourseCoupon::getStatus,"1");
+        Page<CourseCoupon> page = new Page<>(pageParams.getPageNo(),pageParams.getPageSize());
+        Page<CourseCoupon> selectResult = courseCouponMapper.selectPage(page,queryWrapper);
+        CourponResultDto<CourseCoupon> result = new CourponResultDto<>(selectResult.getRecords(),selectResult.getTotal(),selectResult.getPages(),selectResult.getSize());
         return result;
     }
 }

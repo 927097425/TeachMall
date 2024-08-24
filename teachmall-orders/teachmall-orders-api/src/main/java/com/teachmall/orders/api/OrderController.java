@@ -19,10 +19,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -57,6 +54,12 @@ public class OrderController {
         }
         return orderService.createOrder(user.getId(), addOrderDto);
 
+    }
+    @ApiOperation("购买优惠券")
+    @PostMapping("/coupon/purchase/{couponId}")
+    @ResponseBody
+    public void purchaseCoupon(@PathVariable("couponId") Long couponId) {
+        System.out.println(couponId);
     }
 
     @ApiOperation("扫码下单接口")

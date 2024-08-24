@@ -7,7 +7,6 @@ import lombok.ToString;
 @Data
 @ToString
 public class PayStatusDto {
-
     //商户订单号
     String out_trade_no;
     //支付宝交易号
